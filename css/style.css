@@ -1556,6 +1556,26 @@ button,
   display: inline-block;
 }
 
+.logo {
+  width: 142px;
+  height: 42px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.logo--sitemap {
+  display: block;
+  margin-top: 50px;
+  padding: 10px;
+  width: 162px;
+  height: 62px;
+  background-color: #0266c1;
+}
+
+.logo img {
+  height: revert-layer;
+}
+
 @media (max-width: 1199px) {
   .container {
     padding: 0 45px;
