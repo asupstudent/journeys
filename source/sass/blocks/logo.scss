@@ -3,6 +3,10 @@
   height: 42px;
   flex-shrink: 0;
 
+  @include focus {
+    outline: 1px solid $color-default-white;
+  }
+
   &--sitemap {
     display: block;
     margin-top: 50px;
