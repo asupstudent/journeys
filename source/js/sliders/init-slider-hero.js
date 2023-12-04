@@ -7,6 +7,7 @@ const setSliderHero = () => {
       el: sliderHeroPagination,
       clickable: true,
     },
+    loop: true,
     centeredSlides: true,
     slidesPerView: 1,
     spaceBetween: 0,
