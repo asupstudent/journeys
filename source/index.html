@@ -21,45 +21,119 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="container">
-          <div class="header__wrapper">
-            <h1 class="visually-hidden">Lifetour. Увлекательные походы в горы</h1>
-            <a class="header__logo logo" href="#">
-              <img src="img/content/logo-header.svg" width="142" height="42" alt="Логотип Lifetour.">
-            </a>
-            <nav class="header__main-nav header__main-nav--nojs">
-              <ul class="header__main-nav-list">
-                <li class="header__main-nav-item">
-                  <a class="header__main-nav-link" href="#tours">Туры</a>
-                </li>
-                <li class="header__main-nav-item">
-                  <a class="header__main-nav-link" href="#training">Обучение</a>
-                </li>
-                <li class="header__main-nav-item">
-                  <a class="header__main-nav-link" href="#about">О нас</a>
-                </li>
-                <li class="header__main-nav-item">
-                  <a class="header__main-nav-link" href="#reviews">Отзывы</a>
-                </li>
-                <li class="header__main-nav-item">
-                  <a class="header__main-nav-link" href="#gallery">Фотографии</a>
-                </li>
-                <li class="header__main-nav-item">
-                  <a class="header__main-nav-link" href="#contacts">Контакты</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="header__phone">
-              <a href="tel:+788007253232">8 800 725-32-32</a>
-            </div>
-            <button class="header__nav-toggle" type="button">
-              <span class="visually-hidden">Переключатель отображения меню</span>
-            </button>
+        <div class="header__wrapper">
+          <h1 class="visually-hidden">Lifetour. Увлекательные походы в горы</h1>
+          <a class="header__logo logo" href="#">
+            <img src="img/content/logo-header.svg" width="142" height="42" alt="Логотип Lifetour.">
+          </a>
+          <nav class="header__main-nav header__main-nav--nojs">
+            <ul class="header__main-nav-list">
+              <li class="header__main-nav-item">
+                <a class="header__main-nav-link" href="#tours">Туры</a>
+              </li>
+              <li class="header__main-nav-item">
+                <a class="header__main-nav-link" href="#training">Обучение</a>
+              </li>
+              <li class="header__main-nav-item">
+                <a class="header__main-nav-link" href="#about">О нас</a>
+              </li>
+              <li class="header__main-nav-item">
+                <a class="header__main-nav-link" href="#reviews">Отзывы</a>
+              </li>
+              <li class="header__main-nav-item">
+                <a class="header__main-nav-link" href="#gallery">Фотографии</a>
+              </li>
+              <li class="header__main-nav-item">
+                <a class="header__main-nav-link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__phone">
+            <a href="tel:+788007253232">8 800 725-32-32</a>
           </div>
+          <button class="header__nav-toggle" type="button">
+            <span class="visually-hidden">Переключатель отображения меню</span>
+          </button>
         </div>
       </header>
       <main>
-
+        <div class="hero">
+          <div class="hero__swiper swiper">
+            <ul class="hero__list swiper-wrapper">
+              <li class="hero__item swiper-slide">
+                <section class="hero__item-caucasus">
+                  <div class="hero__item-wrapper">
+                    <div class="container">
+                      <div class="hero__item-text">
+                        <h2>Захватывающие вершины Кавказа</h2>
+                        <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
+                        <a class="hero__btn btn" href="#">Смотреть тур</a>
+                        <div class="hero__item-info">
+                          <span>
+                            <svg width="12" height="12" viewBox="0 0 12 12" role="img" aria-label="Продолжительность.">
+                              <use href="img/sprite.svg#moon"></use>
+                            </svg>
+                            6 дней/5 ночей
+                          </span>
+                          <span>
+                            <svg width="12" height="12" viewBox="0 0 12 12" role="img" aria-label="Сложность.">
+                              <use href="img/sprite.svg#level"></use>
+                            </svg>
+                            Высокая сложность
+                          </span>
+                        </div>
+                      </div>
+                      <div class="hero__video">
+                        <!-- <picture>
+                          <source type="image/webp" media="(max-width: 1365px)" width="324" height="390" srcset="./img/content/hero/hero-tablet@1x.webp 1x, ./img/content/hero/hero-tablet@2x.webp 2x">
+                          <source type="image/webp" media="(min-width: 1366px)" width="500" height="524" srcset="./img/content/hero/hero-desktop@1x.webp 1x, ./img/content/hero/hero-desktop@2x.webp 2x">
+                          <source type="image/jpeg" media="(max-width: 1365px)" width="324" height="390" srcset="./img/content/hero/hero-tablet@1x.jpg 1x, ./img/content/hero/hero-tablet@2x.jpg 2x">
+                          <source type="image/jpeg" media="(min-width: 1366px)" width="500" height="524" srcset="./img/content/hero/hero-desktop@1x.jpg 1x, ./img/content/hero/hero-desktop@2x.jpg 2x">
+                          <img src="./img/content/hero/hero-desktop@1x.jpg" width="500" height="524" srcset="./img/content/hero/hero-desktop@2x.jpg 2x" alt="Вид с вершины высокой горы.">
+                        </picture> -->
+                        <button class="hero__video-button">
+                          <svg width="12" height="22" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Запустить видео.">
+                            <use href="img/sprite.svg#play"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hero__image">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 319px)" width="320" height="568" srcset="./img/content/hero/caucasus/caucasus-mobile-320@1x.webp 1x, ./img/content/hero/caucasus/caucasus-mobile-320@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 349px)" width="350" height="568" srcset="./img/content/hero/caucasus/caucasus-mobile-350@1x.webp 1x, ./img/content/hero/caucasus/caucasus-mobile-350@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 419px)" width="420" height="568" srcset="./img/content/hero/caucasus/caucasus-mobile-420@1x.webp 1x, ./img/content/hero/caucasus/caucasus-mobile-420@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 567px)" width="568" height="420" srcset="./img/content/hero/caucasus/caucasus-mobile-568@1x.webp 1x, ./img/content/hero/caucasus/caucasus-mobile-568@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 767px)" width="768" height="1024" srcset="./img/content/hero/caucasus/caucasus-tablet-768@1x.webp 1x, ./img/content/hero/caucasus/caucasus-tablet-768@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" width="1024" height="1024" srcset="./img/content/hero/caucasus/caucasus-tablet-1024@1x.webp 1x, ./img/content/hero/caucasus/caucasus-tablet-1024@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1439px)" width="1440" height="800" srcset="./img/content/hero/caucasus/caucasus-desktop-1440@1x.webp 1x, ./img/content/hero/caucasus/caucasus-desktop-1440@2x.webp 2x">
+                      <source type="image/webp" width="1580" height="908" srcset="./img/content/hero/caucasus/caucasus-desktop-1580@1x.webp 1x, ./img/content/hero/caucasus/caucasus-desktop-1580@2x.webp 2x">
+                      <source type="image/jpeg" media="(max-width: 319px)" width="320" height="568" srcset="./img/content/hero/caucasus/caucasus-mobile-320@1x.jpg 1x, ./img/content/hero/caucasus/caucasus-mobile-320@2x.jpg 2x">
+                      <source type="image/jpeg" media="(max-width: 349px)" width="350" height="568" srcset="./img/content/hero/caucasus/caucasus-mobile-350@1x.jpg 1x, ./img/content/hero/caucasus/caucasus-mobile-350@2x.jpg 2x">
+                      <source type="image/jpeg" media="(max-width: 419px)" width="420" height="568" srcset="./img/content/hero/caucasus/caucasus-mobile-420@1x.jpg 1x, ./img/content/hero/caucasus/caucasus-mobile-420@2x.jpg 2x">
+                      <source type="image/jpeg" media="(max-width: 567px)" width="568" height="420" srcset="./img/content/hero/caucasus/caucasus-mobile-568@1x.jpg 1x, ./img/content/hero/caucasus/caucasus-mobile-568@2x.jpg 2x">
+                      <source type="image/jpeg" media="(max-width: 767px)" width="768" height="1024" srcset="./img/content/hero/caucasus/caucasus-tablet-768@1x.jpg 1x, ./img/content/hero/caucasus/caucasus-tablet-768@2x.jpg 2x">
+                      <source type="image/jpeg" media="(max-width: 1023px)" width="1024" height="1024" srcset="./img/content/hero/caucasus/caucasus-tablet-1024@1x.jpg 1x, ./img/content/hero/caucasus/caucasus-tablet-1024@2x.jpg 2x">
+                      <source type="image/jpeg" media="(max-width: 1439px)" width="1440" height="800" srcset="./img/content/hero/caucasus/caucasus-desktop-1440@1x.jpg 1x, ./img/content/hero/caucasus/caucasus-desktop-1440@2x.jpg 2x">
+                      <img src="./img/content/hero/caucasus/caucasus-desktop-1580@1x.jpg" width="1580" height="908" srcset="./img/content/hero/caucasus/caucasus-desktop-1580@2x.jpg 2x" alt="Кавказские горы.">
+                    </picture>
+                  </div>
+                </section>
+              </li>
+              <li class="hero__item hero__item--kamchatka swiper-slide">
+                <h2>Невероятная природа Камчатки</h2>
+                <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
+                <a class="hero__btn btn" href="#">Смотреть тур</a>
+              </li>
+              <li class="hero__item hero__item--altai swiper-slide">
+                <h2>Магические пейзажи Алтайского Края</h2>
+                <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
+                <a class="hero__btn btn" href="#">Смотреть тур</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </main>
       <footer>
 
