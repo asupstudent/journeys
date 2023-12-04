@@ -9,7 +9,7 @@ const setSliderHero = () => {
     },
     centeredSlides: true,
     slidesPerView: 1,
-    spaceBetween: 30,
+    spaceBetween: 0,
   });
 };
 
