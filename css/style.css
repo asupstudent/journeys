@@ -1902,6 +1902,21 @@ button,
   transform: translate(-4px, -12px);
 }
 
+.hero__photos {
+  position: absolute;
+  width: 410px;
+  height: 459px;
+  right: 321px;
+  top: 200px;
+}
+
+.hero__photos img {
+  width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  height: auto;
+}
+
 @media (max-width: 1199px) {
   .container {
     padding: 0 45px;
@@ -1911,6 +1926,14 @@ button,
 @media (max-width: 767px) {
   .container {
     padding: 0 15px;
+  }
+
+  .hero__video {
+    display: none;
+  }
+
+  .hero__photos {
+    display: none;
   }
 }
 
