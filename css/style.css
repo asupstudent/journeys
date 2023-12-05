@@ -1798,6 +1798,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 520px;
 }
 
 .hero__video {
@@ -1917,6 +1918,83 @@ button,
   height: auto;
 }
 
+.hero__audio {
+  -ms-flex-item-align: end;
+  -ms-grid-row-align: end;
+  align-self: end;
+  margin-bottom: 100px;
+}
+
+.hero__audio iframe {
+  width: 340px;
+  height: 220px;
+}
+
+.hero__item-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.hero__item-info span {
+  position: relative;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  padding: 14px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+}
+
+.hero__item-info svg {
+  position: relative;
+  top: 1px;
+  left: -5px;
+}
+
+.hero__btn {
+  margin-bottom: auto;
+}
+
+.swiper .hero__pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 20px;
+  right: 145px;
+  left: auto;
+  bottom: 210px;
+}
+
+.swiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0);
+  opacity: 1;
+}
+
+.swiper .swiper-pagination-bullet:active:not(.focus-visible) {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.swiper .swiper-pagination-bullet.focus-visible:focus,
+.swiper .swiper-pagination-bullet:focus-visible {
+  outline-offset: 1px;
+  outline: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background: #ffffff;
+}
+
 @media (max-width: 1199px) {
   .container {
     padding: 0 45px;
@@ -1934,6 +2012,15 @@ button,
 
   .hero__photos {
     display: none;
+  }
+
+  .hero__audio {
+    display: none;
+  }
+
+  .swiper .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
   }
 }
 
@@ -1960,5 +2047,9 @@ button,
 
   .hero__video-button:hover:not(.focus-visible) svg path {
     stroke: #000000;
+  }
+
+  .swiper .swiper-pagination-bullet:hover:not(.focus-visible) {
+    background-color: #d9d9d9;
   }
 }
