@@ -58,6 +58,10 @@
     object-fit: cover;
     height: auto;
   }
+
+  @include vp-767 {
+    display: none;
+  }
 }
 
 .hero__video-player {
@@ -136,5 +140,23 @@
     top: 50%;
     left: 50%;
     transform: translate(-4px, -12px);
+  }
+}
+
+.hero__photos {
+  position: absolute;
+  width: 410px;
+  height: 459px;
+  right: 321px;
+  top: 200px;
+
+  img {
+    width: 100%;
+    object-fit: contain;
+    height: auto;
+  }
+
+  @include vp-767 {
+    display: none;
   }
 }
