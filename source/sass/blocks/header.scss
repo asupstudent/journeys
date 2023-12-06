@@ -1,12 +1,7 @@
 .header {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: $color-navy-blue;
-  width: 100%;
-  max-width: 1200px;
-  z-index: 2;
+  &--sitemap {
+    padding-top: 50px;
+  }
 }
 
 .header__wrapper {
@@ -43,7 +38,7 @@
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
-  color: $color-default-white;
+  // color: $color-default-white;
 
   &::before {
     content: "";

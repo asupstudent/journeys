@@ -1,0 +1,86 @@
+.nav {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  z-index: 1;
+  max-width: 1200px;
+  width: 100%;
+  padding: 32px 20px;
+  color: $color-default-white;
+  background-color: $color-navy-blue;
+
+  @include vp-1199 {
+    padding: 20px 45px;
+  }
+
+  @include vp-767 {
+    padding: 15px;
+  }
+
+  &--is-opened {
+    background-color: $color-default-white;
+  }
+}
+
+.nav__logo {
+  z-index: 1;
+
+  @include vp-1199 {
+    order: 2;
+  }
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style-type: none;
+  padding: 0;
+  width: 652px;
+  margin: 0 auto;
+
+  @include vp-1199 {
+    display: block;  //Временно
+    position: absolute;
+    top: 70px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    background-color: $color-default-white;
+    padding: 50px 45px 70px;
+    z-index: 2;
+  }
+
+  @include vp-767 {
+    padding: 30px 15px 50px;
+  }
+}
+
+.nav__burger-button {
+  display: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  z-index: 2;
+
+  svg + svg {
+    display: none;
+  }
+
+  @include vp-1199 {
+    order: 1;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    // margin: 0 102px 0 0;
+  }
+
+  @include vp-767 {
+    // margin: 0;
+  }
+}
