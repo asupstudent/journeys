@@ -21,40 +21,47 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="header__wrapper">
-          <h1 class="visually-hidden">Lifetour. Увлекательные походы в горы</h1>
-          <a class="header__logo logo" href="#">
-            <img src="img/content/logo-header.svg" width="142" height="42" alt="Логотип Lifetour.">
+        <h1 class="visually-hidden">Lifetour. Увлекательные походы в горы</h1>
+        <nav class="header__main-nav main-nav main-nav--is-closed main-nav--nojs" data-menu="main-nav">
+          <a class="main-nav__logo main-nav__logo--is-closed logo" href="#" data-menu="logo">
+            <svg width="205" height="62">
+              <use href="img/sprite.svg#logo"></use>
+            </svg>
+            <span class="visually-hidden">Логотип Lifetour</span>
           </a>
-          <nav class="header__main-nav header__main-nav--nojs">
-            <ul class="header__main-nav-list">
-              <li class="header__main-nav-item">
-                <a class="header__main-nav-link" href="#tours">Туры</a>
-              </li>
-              <li class="header__main-nav-item">
-                <a class="header__main-nav-link" href="#training">Обучение</a>
-              </li>
-              <li class="header__main-nav-item">
-                <a class="header__main-nav-link" href="#about">О нас</a>
-              </li>
-              <li class="header__main-nav-item">
-                <a class="header__main-nav-link" href="#reviews">Отзывы</a>
-              </li>
-              <li class="header__main-nav-item">
-                <a class="header__main-nav-link" href="#gallery">Фотографии</a>
-              </li>
-              <li class="header__main-nav-item">
-                <a class="header__main-nav-link" href="#contacts">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header__phone">
+          <ul class="main-nav__list main-nav__list--is-closed" data-menu="menu">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#tours">Туры</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#training">Обучение</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#about">О нас</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#reviews">Отзывы</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#gallery">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+          <div class="main-nav__phone main-nav__phone--is-closed" data-menu="phone">
             <a href="tel:+788007253232">8 800 725-32-32</a>
           </div>
-          <button class="header__nav-toggle" type="button">
+          <button class="main-nav__burger-button main-nav__burger-button--is-closed" type="button" data-menu="burger-button">
+            <svg width="26" height="26" viewBox="0 0 26 26" role="img" data-menu="is-closed">
+              <use href="img/sprite.svg#menu"></use>
+            </svg>
+            <svg width="26" height="26" viewBox="0 0 26 26" role="img" data-menu="is-opened">
+              <use href="img/sprite.svg#close"></use>
+            </svg>
             <span class="visually-hidden">Переключатель отображения меню</span>
           </button>
-        </div>
+        </nav>
       </header>
       <main>
         <div class="hero">
@@ -110,7 +117,8 @@
                       <source type="image/webp" media="(max-width: 767px)" width="768" height="1024" srcset="./img/content/hero/caucasus/caucasus-tablet-768@1x.webp 1x, ./img/content/hero/caucasus/caucasus-tablet-768@2x.webp 2x">
                       <source type="image/webp" media="(max-width: 1023px)" width="1024" height="1024" srcset="./img/content/hero/caucasus/caucasus-tablet-1024@1x.webp 1x, ./img/content/hero/caucasus/caucasus-tablet-1024@2x.webp 2x">
                       <source type="image/webp" media="(max-width: 1439px)" width="1440" height="800" srcset="./img/content/hero/caucasus/caucasus-desktop-1440@1x.webp 1x, ./img/content/hero/caucasus/caucasus-desktop-1440@2x.webp 2x">
-                      <source type="image/webp" width="1580" height="908" srcset="./img/content/hero/caucasus/caucasus-desktop-1580@1x.webp 1x, ./img/content/hero/caucasus/caucasus-desktop-1580@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1579px)" width="1580" height="908" srcset="./img/content/hero/caucasus/caucasus-desktop-1580@1x.webp 1x, ./img/content/hero/caucasus/caucasus-desktop-1580@2x.webp 2x">
+                      <source type="image/webp" width="1920" height="908" srcset="./img/content/hero/caucasus/caucasus-desktop-1920@1x.webp 1x, ./img/content/hero/caucasus/caucasus-desktop-1920@2x.webp 2x">
                       <source type="image/jpeg" media="(max-width: 319px)" width="320" height="568" srcset="./img/content/hero/caucasus/caucasus-mobile-320@1x.jpg 1x, ./img/content/hero/caucasus/caucasus-mobile-320@2x.jpg 2x">
                       <source type="image/jpeg" media="(max-width: 349px)" width="350" height="568" srcset="./img/content/hero/caucasus/caucasus-mobile-350@1x.jpg 1x, ./img/content/hero/caucasus/caucasus-mobile-350@2x.jpg 2x">
                       <source type="image/jpeg" media="(max-width: 419px)" width="420" height="568" srcset="./img/content/hero/caucasus/caucasus-mobile-420@1x.jpg 1x, ./img/content/hero/caucasus/caucasus-mobile-420@2x.jpg 2x">
@@ -118,7 +126,8 @@
                       <source type="image/jpeg" media="(max-width: 767px)" width="768" height="1024" srcset="./img/content/hero/caucasus/caucasus-tablet-768@1x.jpg 1x, ./img/content/hero/caucasus/caucasus-tablet-768@2x.jpg 2x">
                       <source type="image/jpeg" media="(max-width: 1023px)" width="1024" height="1024" srcset="./img/content/hero/caucasus/caucasus-tablet-1024@1x.jpg 1x, ./img/content/hero/caucasus/caucasus-tablet-1024@2x.jpg 2x">
                       <source type="image/jpeg" media="(max-width: 1439px)" width="1440" height="800" srcset="./img/content/hero/caucasus/caucasus-desktop-1440@1x.jpg 1x, ./img/content/hero/caucasus/caucasus-desktop-1440@2x.jpg 2x">
-                      <img src="./img/content/hero/caucasus/caucasus-desktop-1580@1x.jpg" width="1580" height="908" srcset="./img/content/hero/caucasus/caucasus-desktop-1580@2x.jpg 2x" alt="Кавказские горы.">
+                      <source type="image/jpeg" media="(max-width: 1579px)" width="1580" height="908" srcset="./img/content/hero/caucasus/caucasus-desktop-1580@1x.jpg 1x, ./img/content/hero/caucasus/caucasus-desktop-1580@2x.jpg 2x">
+                      <img src="./img/content/hero/caucasus/caucasus-desktop-1920@1x.jpg" width="1920" height="908" srcset="./img/content/hero/caucasus/caucasus-desktop-1920@2x.jpg 2x" alt="Кавказские горы.">
                     </picture>
                   </div>
                 </section>
@@ -167,7 +176,8 @@
                       <source type="image/webp" media="(max-width: 767px)" width="768" height="1024" srcset="./img/content/hero/kamchatka/kamchatka-tablet-768@1x.webp 1x, ./img/content/hero/kamchatka/kamchatka-tablet-768@2x.webp 2x">
                       <source type="image/webp" media="(max-width: 1023px)" width="1024" height="1024" srcset="./img/content/hero/kamchatka/kamchatka-tablet-1024@1x.webp 1x, ./img/content/hero/kamchatka/kamchatka-tablet-1024@2x.webp 2x">
                       <source type="image/webp" media="(max-width: 1439px)" width="1440" height="800" srcset="./img/content/hero/kamchatka/kamchatka-desktop-1440@1x.webp 1x, ./img/content/hero/kamchatka/kamchatka-desktop-1440@2x.webp 2x">
-                      <source type="image/webp" width="1580" height="908" srcset="./img/content/hero/kamchatka/kamchatka-desktop-1580@1x.webp 1x, ./img/content/hero/kamchatka/kamchatka-desktop-1580@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1579px)" width="1580" height="908" srcset="./img/content/hero/kamchatka/kamchatka-desktop-1580@1x.webp 1x, ./img/content/hero/kamchatka/kamchatka-desktop-1580@2x.webp 2x">
+                      <source type="image/webp" width="1920" height="908" srcset="./img/content/hero/kamchatka/kamchatka-desktop-1920@1x.webp 1x, ./img/content/hero/kamchatka/kamchatka-desktop-1920@2x.webp 2x">
                       <source type="image/jpeg" media="(max-width: 319px)" width="320" height="568" srcset="./img/content/hero/kamchatka/kamchatka-mobile-320@1x.jpg 1x, ./img/content/hero/kamchatka/kamchatka-mobile-320@2x.jpg 2x">
                       <source type="image/jpeg" media="(max-width: 349px)" width="350" height="568" srcset="./img/content/hero/kamchatka/kamchatka-mobile-350@1x.jpg 1x, ./img/content/hero/kamchatka/kamchatka-mobile-350@2x.jpg 2x">
                       <source type="image/jpeg" media="(max-width: 419px)" width="420" height="568" srcset="./img/content/hero/kamchatka/kamchatka-mobile-420@1x.jpg 1x, ./img/content/hero/kamchatka/kamchatka-mobile-420@2x.jpg 2x">
@@ -175,7 +185,8 @@
                       <source type="image/jpeg" media="(max-width: 767px)" width="768" height="1024" srcset="./img/content/hero/kamchatka/kamchatka-tablet-768@1x.jpg 1x, ./img/content/hero/kamchatka/kamchatka-tablet-768@2x.jpg 2x">
                       <source type="image/jpeg" media="(max-width: 1023px)" width="1024" height="1024" srcset="./img/content/hero/kamchatka/kamchatka-tablet-1024@1x.jpg 1x, ./img/content/hero/kamchatka/kamchatka-tablet-1024@2x.jpg 2x">
                       <source type="image/jpeg" media="(max-width: 1439px)" width="1440" height="800" srcset="./img/content/hero/kamchatka/kamchatka-desktop-1440@1x.jpg 1x, ./img/content/hero/kamchatka/kamchatka-desktop-1440@2x.jpg 2x">
-                      <img src="./img/content/hero/kamchatka/kamchatka-desktop-1580@1x.jpg" width="1580" height="908" srcset="./img/content/hero/kamchatka/kamchatka-desktop-1580@2x.jpg 2x" alt="Красоты Камчатки.">
+                      <source type="image/jpeg" media="(max-width: 1579px)" width="1580" height="908" srcset="./img/content/hero/kamchatka/kamchatka-desktop-1580@1x.jpg 1x, ./img/content/hero/kamchatka/kamchatka-desktop-1580@2x.jpg 2x">
+                      <img src="./img/content/hero/kamchatka/kamchatka-desktop-1920@1x.jpg" width="1920" height="908" srcset="./img/content/hero/kamchatka/kamchatka-desktop-1920@2x.jpg 2x" alt="Красоты Камчатки.">
                     </picture>
                   </div>
                 </section>
@@ -219,7 +230,8 @@
                       <source type="image/webp" media="(max-width: 767px)" width="768" height="1024" srcset="./img/content/hero/altai/altai-tablet-768@1x.webp 1x, ./img/content/hero/altai/altai-tablet-768@2x.webp 2x">
                       <source type="image/webp" media="(max-width: 1023px)" width="1024" height="1024" srcset="./img/content/hero/altai/altai-tablet-1024@1x.webp 1x, ./img/content/hero/altai/altai-tablet-1024@2x.webp 2x">
                       <source type="image/webp" media="(max-width: 1439px)" width="1440" height="800" srcset="./img/content/hero/altai/altai-desktop-1440@1x.webp 1x, ./img/content/hero/altai/altai-desktop-1440@2x.webp 2x">
-                      <source type="image/webp" width="1580" height="908" srcset="./img/content/hero/altai/altai-desktop-1580@1x.webp 1x, ./img/content/hero/altai/altai-desktop-1580@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1579px)" width="1580" height="908" srcset="./img/content/hero/altai/altai-desktop-1580@1x.webp 1x, ./img/content/hero/altai/altai-desktop-1580@2x.webp 2x">
+                      <source type="image/webp" width="1920" height="908" srcset="./img/content/hero/altai/altai-desktop-1920@1x.webp 1x, ./img/content/hero/altai/altai-desktop-1920@2x.webp 2x">
                       <source type="image/jpeg" media="(max-width: 319px)" width="320" height="568" srcset="./img/content/hero/altai/altai-mobile-320@1x.jpg 1x, ./img/content/hero/altai/altai-mobile-320@2x.jpg 2x">
                       <source type="image/jpeg" media="(max-width: 349px)" width="350" height="568" srcset="./img/content/hero/altai/altai-mobile-350@1x.jpg 1x, ./img/content/hero/altai/altai-mobile-350@2x.jpg 2x">
                       <source type="image/jpeg" media="(max-width: 419px)" width="420" height="568" srcset="./img/content/hero/altai/altai-mobile-420@1x.jpg 1x, ./img/content/hero/altai/altai-mobile-420@2x.jpg 2x">
@@ -227,7 +239,8 @@
                       <source type="image/jpeg" media="(max-width: 767px)" width="768" height="1024" srcset="./img/content/hero/altai/altai-tablet-768@1x.jpg 1x, ./img/content/hero/altai/altai-tablet-768@2x.jpg 2x">
                       <source type="image/jpeg" media="(max-width: 1023px)" width="1024" height="1024" srcset="./img/content/hero/altai/altai-tablet-1024@1x.jpg 1x, ./img/content/hero/altai/altai-tablet-1024@2x.jpg 2x">
                       <source type="image/jpeg" media="(max-width: 1439px)" width="1440" height="800" srcset="./img/content/hero/altai/altai-desktop-1440@1x.jpg 1x, ./img/content/hero/altai/altai-desktop-1440@2x.jpg 2x">
-                      <img src="./img/content/hero/altai/altai-desktop-1580@1x.jpg" width="1580" height="908" srcset="./img/content/hero/altai/altai-desktop-1580@2x.jpg 2x" alt="Прекрасный Алтай.">
+                      <source type="image/jpeg" media="(max-width: 1579px)" width="1580" height="908" srcset="./img/content/hero/altai/altai-desktop-1580@1x.jpg 1x, ./img/content/hero/altai/altai-desktop-1580@2x.jpg 2x">
+                      <img src="./img/content/hero/altai/altai-desktop-1920@1x.jpg" width="1920" height="908" srcset="./img/content/hero/altai/altai-desktop-1920@2x.jpg 2x" alt="Прекрасный Алтай.">
                     </picture>
                   </div>
                 </section>
