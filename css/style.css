@@ -1366,6 +1366,19 @@ body {
   background-color: #ffffff;
 }
 
+body.overlay {
+  position: relative;
+}
+
+body.overlay::before {
+  position: absolute;
+  content: "";
+  background-color: rgba(45, 56, 63, 0.6);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
 a {
   color: #000000;
   text-decoration: none;
@@ -1651,7 +1664,7 @@ button,
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  z-index: 1;
+  z-index: 2;
   max-width: 1200px;
   width: 100%;
   padding: 32px 20px;
@@ -1664,7 +1677,7 @@ button,
 }
 
 .nav__logo {
-  z-index: 1;
+  z-index: 2;
 }
 
 .nav__list {
@@ -1717,13 +1730,58 @@ button,
   outline: 1px solid #ffffff;
 }
 
+.nav__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.nav__phone .nav__phone-link {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  margin-left: auto;
+}
+
+.nav__phone .nav__phone-link.focus-visible:focus,
+.nav__phone .nav__phone-link:focus-visible {
+  color: #1c3374;
+}
+
+.nav__phone .nav__phone-link:active:not(.focus-visible) {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.nav__phone .nav__phone-link:focus {
+  outline: none;
+}
+
+.nav__phone--is-opened .nav__phone-link {
+  color: #2d383f;
+}
+
 .nav__burger-button {
   display: none;
   border: none;
   padding: 0;
   cursor: pointer;
   background-color: transparent;
-  z-index: 2;
+  z-index: 3;
 }
 
 .nav__burger-button svg + svg {
@@ -2024,9 +2082,7 @@ button,
   }
 
   .nav__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
@@ -2041,7 +2097,7 @@ button,
     width: 100%;
     background-color: #ffffff;
     padding: 50px 45px 70px;
-    z-index: 2;
+    z-index: 3;
   }
 
   .nav__link {
@@ -2060,6 +2116,17 @@ button,
   .nav__link.focus-visible:focus,
   .nav__link:focus-visible {
     outline: 1px solid #2d383f;
+  }
+
+  .nav__phone .nav__phone-link {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .nav__phone {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
   }
 
   .nav__burger-button {
@@ -2121,7 +2188,18 @@ button,
   }
 
   .nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 26px 1fr;
+    grid-template-columns: 26px 1fr;
+    -ms-grid-rows: 42px auto;
+    grid-template-rows: 42px auto;
     padding: 15px;
+  }
+
+  .nav__logo {
+    -ms-grid-column-align: end;
+    justify-self: end;
   }
 
   .nav__list {
@@ -2135,8 +2213,20 @@ button,
     letter-spacing: 0.56px;
   }
 
+  .nav__phone .nav__phone-link {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .nav__phone {
+    grid-column: 1/-1;
+  }
+
   .nav__burger-button {
     margin: 0;
+    -ms-flex-item-align: start;
+    -ms-grid-row-align: start;
+    align-self: start;
   }
 
   .hero__item-text h2 {
@@ -2194,6 +2284,10 @@ button,
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
+  }
+
+  .nav__phone .nav__phone-link:hover:not(.focus-visible) {
+    color: #1c3374;
   }
 
   .hero__video-button:hover:not(.focus-visible)::after {
