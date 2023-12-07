@@ -44,11 +44,13 @@
   margin: 0 auto;
 
   @include vp-1199 {
-    display: block;  //Временно
-    position: absolute;
-    top: 70px;
-    left: 0;
+    display: flex;
+    align-items: flex-start;
     flex-direction: column;
+    row-gap: 26px;
+    position: absolute;
+    top: 82px;
+    left: 0;
     width: 100%;
     background-color: $color-default-white;
     padding: 50px 45px 70px;
@@ -56,7 +58,69 @@
   }
 
   @include vp-767 {
+    row-gap: 22px;
     padding: 30px 15px 50px;
+  }
+}
+
+.nav__link {
+  color: $color-default-white;
+  position: relative;
+  padding: 3px 5px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $color-default-white;
+    transform: scale(0);
+    transform-origin: center;
+    transition: $trans-default;
+  }
+
+  @include hover {
+    &::before {
+      transform: scale(1);
+    }
+  }
+
+  @include active {
+    &::before {
+      display: none;
+    }
+  }
+
+  @include focus {
+    outline: 1px solid $color-default-white;
+  }
+
+  @include vp-1199 {
+    color: $color-elephant;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
+
+    &::before {
+      background-color: $color-elephant;
+    }
+
+    @include focus {
+      outline: 1px solid $color-elephant;
+    }
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.56px;
   }
 }
 
@@ -77,10 +141,10 @@
     display: flex;
     align-self: center;
     justify-content: center;
-    // margin: 0 102px 0 0;
+    margin: 0 103px 0 0;
   }
 
   @include vp-767 {
-    // margin: 0;
+    margin: 0;
   }
 }
