@@ -23,6 +23,15 @@
       <header class="header">
         <h1 class="visually-hidden">Lifetour. Увлекательные походы в горы</h1>
         <nav class="nav nav--is-closed" data-menu="main-nav">
+          <button class="nav__burger-button" type="button" data-menu="burger-button">
+            <svg width="26" height="26" viewBox="0 0 26 26" role="img" data-menu="is-closed">
+              <use href="img/sprite.svg#menu"></use>
+            </svg>
+            <svg width="26" height="26" viewBox="0 0 26 26" role="img" data-menu="is-opened">
+              <use href="img/sprite.svg#close"></use>
+            </svg>
+            <span class="visually-hidden">Переключатель отображения меню</span>
+          </button>
           <a class="nav__logo logo logo--is-closed logo--main-nav" href="#" data-menu="logo">
             <svg width="142" height="42">
               <use href="img/sprite.svg#logo"></use>
@@ -52,16 +61,7 @@
           <div class="nav__phone nav__phone--is-closed" data-menu="phone">
             <a class="nav__phone-link" href="tel:+788007253232">8 800 725-32-32</a>
           </div>
-          <button class="nav__burger-button" type="button" data-menu="burger-button">
-            <svg width="26" height="26" viewBox="0 0 26 26" role="img" data-menu="is-closed">
-              <use href="img/sprite.svg#menu"></use>
-            </svg>
-            <svg width="26" height="26" viewBox="0 0 26 26" role="img" data-menu="is-opened">
-              <use href="img/sprite.svg#close"></use>
-            </svg>
-            <span class="visually-hidden">Переключатель отображения меню</span>
-          </button>
-        </nav>
+          </nav>
       </header>
       <main>
         <div class="hero">

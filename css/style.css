@@ -1649,6 +1649,11 @@ button,
   color: #2d383f;
 }
 
+.logo--is-opened.focus-visible:focus,
+.logo--is-opened:focus-visible {
+  color: #0266c1;
+}
+
 .nav {
   position: absolute;
   top: 0;
@@ -1674,6 +1679,12 @@ button,
 
 .nav--is-opened {
   background-color: #ffffff;
+}
+
+.nav--is-opened .nav__burger-button.focus-visible:focus,
+.nav--is-opened .nav__burger-button:focus-visible {
+  outline: 1px solid #2d383f;
+  outline-offset: 5px;
 }
 
 .nav__logo {
@@ -1775,6 +1786,26 @@ button,
   color: #2d383f;
 }
 
+.nav__phone--is-opened .nav__phone-link.focus-visible:focus,
+.nav__phone--is-opened .nav__phone-link:focus-visible {
+  color: #1c3374;
+}
+
+.nav__phone--is-opened .nav__phone-link:active:not(.focus-visible) {
+  color: #0266c1;
+}
+
+.nav__phone--is-opened .nav__phone-link:disabled,
+.nav__phone--is-opened .nav__phone-link.is-disabled {
+  color: #0266c1;
+  pointer-events: none;
+  cursor: default;
+}
+
+.nav__phone--is-opened .nav__phone-link:focus {
+  outline: none;
+}
+
 .nav__burger-button {
   display: none;
   border: none;
@@ -1786,6 +1817,12 @@ button,
 
 .nav__burger-button svg + svg {
   display: none;
+}
+
+.nav__burger-button.focus-visible:focus,
+.nav__burger-button:focus-visible {
+  outline: 1px solid #ffffff;
+  outline-offset: 5px;
 }
 
 .hero {
@@ -2021,10 +2058,10 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     row-gap: 26px;
-    position: absolute;
-    top: 82px;
-    left: 0;
     width: 100%;
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4;
     background-color: #ffffff;
     padding: 50px 45px 70px;
     z-index: 3;
@@ -2118,21 +2155,24 @@ button,
   .nav {
     display: -ms-grid;
     display: grid;
+    grid-template-areas: "button logo" "phone phone" "nav nav";
     -ms-grid-columns: 26px 1fr;
     grid-template-columns: 26px 1fr;
-    -ms-grid-rows: 42px auto;
-    grid-template-rows: 42px auto;
+    -ms-grid-rows: 42px auto auto;
+    grid-template-rows: 42px auto auto;
     padding: 15px;
   }
 
   .nav__logo {
     -ms-grid-column-align: end;
     justify-self: end;
+    grid-area: logo;
   }
 
   .nav__list {
     row-gap: 22px;
     padding: 30px 15px 50px;
+    grid-area: nav;
   }
 
   .nav__link {
@@ -2148,13 +2188,36 @@ button,
 
   .nav__phone {
     grid-column: 1/-1;
+    grid-area: phone;
   }
 
   .nav__burger-button {
     margin: 0;
-    -ms-flex-item-align: start;
     -ms-grid-row-align: start;
     align-self: start;
+    grid-area: button;
+  }
+
+  .nav__logo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+
+  .nav__list {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+
+  .nav__phone {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+
+  .nav__burger-button {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
   }
 
   .hero__wrapper {
@@ -2195,6 +2258,10 @@ button,
   }
 
   .nav__phone .nav__phone-link:hover:not(.focus-visible) {
+    color: #1c3374;
+  }
+
+  .nav__phone--is-opened .nav__phone-link:hover:not(.focus-visible) {
     color: #1c3374;
   }
 
