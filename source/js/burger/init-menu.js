@@ -29,12 +29,14 @@ const toggleBurgerMenu = () => {
           closedIconMenu.style.display = 'none';
           openedIconMenu.style.display = 'block';
           window.scrollLock.disableScrolling();
+          window.focusLock.lock('[data-menu="main-nav"]', false);
         } else {
           navList.classList.add('nav__list--is-closed');
           navList.style.display = 'none';
           closedIconMenu.style.display = 'block';
           openedIconMenu.style.display = 'none';
           window.scrollLock.enableScrolling();
+          window.focusLock.unlock();
         }
       });
     });
