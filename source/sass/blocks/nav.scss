@@ -55,11 +55,12 @@
 
 .nav__list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 30px;
+  gap: 21px;
   list-style-type: none;
   padding: 0;
-  width: 652px;
+  width: 584px;
   margin: 0 auto;
 
   @include vp-1199 {
@@ -157,6 +158,7 @@
     font-weight: 600;
     line-height: 18px;
     margin-left: auto;
+    margin-top: 4px;
 
     @include hover-focus {
       color: $color-resolution-blue;
