@@ -208,7 +208,6 @@
   }
 
   @include vp-767 {
-    grid-column: 1/-1;
     grid-area: phone;
   }
 }

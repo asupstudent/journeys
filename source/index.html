@@ -207,8 +207,8 @@
         <section class="tours">
           <div class="container">
             <div class="tours__wrapper">
-              <header class="tours__header">
-                <h2 class="tours__title" data-text="Ближайшие туры">Ближайшие туры</h2>
+              <header class="tours__header" data-text="Ближайшие туры">
+                <h2 class="tours__title">Ближайшие туры</h2>
                 <div class="tours navigation swiper-navigation">
                   <button class="tours__button tours__button--prev" aria-label="Назад." type="button" data-swiper="button-prev">
                     <svg width="14" height="9" role="img">
@@ -225,13 +225,30 @@
               <div class="tours__swiper swiper" data-swiper="tours">
                 <ul class="tours__list swiper-wrapper">
                   <li class="tours__item swiper-slide">
-                    <ul class="tours__data">
-                      <li class="tours__point">Кавказ</li>
-                      <li class="tours__days">4 дня</li>
-                      <li class="tours__nights">3 ночи</li>
-                    </ul>
+                    <div class="tours__data">
+                      <div class="tours__point">
+                        <svg width="9" height="12" role="img">
+                            <use href="img/sprite.svg#location-pin"></use>
+                        </svg>
+                        <span>Кавказ</span>
+                      </div>
+                      <div class="tours__data-wrapper">
+                        <div class="tours__days">
+                          <svg width="20" height="20" role="img">
+                            <use href="img/sprite.svg#sun"></use>
+                          </svg>
+                          <span>4 дня</span>
+                        </div>
+                        <div class="tours__nights">
+                          <svg width="20" height="20" role="img">
+                            <use href="img/sprite.svg#moon"></use>
+                          </svg>
+                          <span>3 ночи</span>
+                        </div>
+                      </div>
+                    </div>
                     <h3>Путешествие вокруг Эльбруса</h3>
-                    <div class="tours__description">
+                    <!-- <div class="tours__description">
                       <dl class="tours__level">
                         <dt>Сложность</dt>
                         <dd>
@@ -249,7 +266,7 @@
                         <dt>Группа:</dt>
                         <dd>до 15 чел.</dd>
                       </dl>
-                    </div>
+                    </div> -->
                     <div class="tours__image">
                       <picture>
                         <source type="image/webp" media="(max-width: 350px)" width="350" height="568" srcset="./img/content/tours/elbrus/elbrus-mobile@1x.webp 1x, ./img/content/tours/elbrus/elbrus-mobile@2x.webp 2x">
@@ -264,13 +281,30 @@
                     </div>
                   </li>
                   <li class="tours__item swiper-slide">
-                    <ul class="tours__data">
-                      <li class="tours__point">Алтай</li>
-                      <li class="tours__days">14 дней</li>
-                      <li class="tours__nights">13 ночей</li>
-                    </ul>
+                    <div class="tours__data">
+                      <div class="tours__point">
+                        <svg width="9" height="12" role="img">
+                            <use href="img/sprite.svg#location-pin"></use>
+                        </svg>
+                        <span>Алтай</span>
+                      </div>
+                      <div class="tours__data-wrapper">
+                        <div class="tours__days">
+                          <svg width="20" height="20" role="img">
+                            <use href="img/sprite.svg#sun"></use>
+                          </svg>
+                          <span>14 дней</span>
+                        </div>
+                        <div class="tours__nights">
+                          <svg width="20" height="20" role="img">
+                            <use href="img/sprite.svg#moon"></use>
+                          </svg>
+                          <span>13 ночей</span>
+                        </div>
+                      </div>
+                    </div>
                     <h3>Путь к подножию Белухи</h3>
-                    <div class="tours__description">
+                    <!-- <div class="tours__description">
                       <dl class="tours__level">
                         <dt>Сложность</dt>
                         <dd>
@@ -288,7 +322,7 @@
                         <dt>Группа:</dt>
                         <dd>до 25  чел.</dd>
                       </dl>
-                    </div>
+                    </div> -->
                     <div class="tours__image">
                       <picture>
                         <source type="image/webp" media="(max-width: 350px)" width="350" height="568" srcset="./img/content/tours/belukha/belukha-mobile@1x.webp 1x, ./img/content/tours/belukha/belukha-mobile@2x.webp 2x">
@@ -303,13 +337,30 @@
                     </div>
                   </li>
                   <li class="tours__item swiper-slide">
-                    <ul class="tours__data">
-                      <li class="tours__point">Адыгея</li>
-                      <li class="tours__days">7 дней</li>
-                      <li class="tours__nights">6 ночей</li>
-                    </ul>
-                    <h3>Через Фишт к Чёрному морю и обратно</h3>
-                    <div class="tours__description">
+                    <div class="tours__data">
+                      <div class="tours__point">
+                        <svg width="9" height="12" role="img">
+                            <use href="img/sprite.svg#location-pin"></use>
+                        </svg>
+                        <span>Адыгея</span>
+                      </div>
+                      <div class="tours__data-wrapper">
+                        <div class="tours__days">
+                          <svg width="20" height="20" role="img">
+                            <use href="img/sprite.svg#sun"></use>
+                          </svg>
+                          <span>7 дней</span>
+                        </div>
+                        <div class="tours__nights">
+                          <svg width="20" height="20" role="img">
+                            <use href="img/sprite.svg#moon"></use>
+                          </svg>
+                          <span>6 ночей</span>
+                        </div>
+                      </div>
+                    </div>
+                    <h3>Через Фишт к&nbsp;Чёрному морю и&nbsp;обратно</h3>
+                    <!-- <div class="tours__description">
                       <dl class="tours__level">
                         <dt>Сложность</dt>
                         <dd>
@@ -327,7 +378,7 @@
                         <dt>Группа:</dt>
                         <dd>до 22 чел.</dd>
                       </dl>
-                    </div>
+                    </div> -->
                     <div class="tours__image">
                       <picture>
                         <source type="image/webp" media="(max-width: 350px)" width="350" height="568" srcset="./img/content/tours/fisht/fisht-mobile@1x.webp 1x, ./img/content/tours/fisht/fisht-mobile@2x.webp 2x">
@@ -342,13 +393,30 @@
                     </div>
                   </li>
                   <li class="tours__item swiper-slide">
-                    <ul class="tours__data">
-                      <li class="tours__point">Кавказ</li>
-                      <li class="tours__days">4 дня</li>
-                      <li class="tours__nights">3 ночи</li>
-                    </ul>
+                    <div class="tours__data">
+                      <div class="tours__point">
+                        <svg width="9" height="12" role="img">
+                            <use href="img/sprite.svg#location-pin"></use>
+                        </svg>
+                        <span>Кавказ</span>
+                      </div>
+                      <div class="tours__data-wrapper">
+                        <div class="tours__days">
+                          <svg width="20" height="20" role="img">
+                            <use href="img/sprite.svg#sun"></use>
+                          </svg>
+                          <span>4 дня</span>
+                        </div>
+                        <div class="tours__nights">
+                          <svg width="20" height="20" role="img">
+                            <use href="img/sprite.svg#moon"></use>
+                          </svg>
+                          <span>3 ночи</span>
+                        </div>
+                      </div>
+                    </div>
                     <h3>Путешествие вокруг Эльбруса</h3>
-                    <div class="tours__description">
+                    <!-- <div class="tours__description">
                       <dl class="tours__level">
                         <dt>Сложность</dt>
                         <dd>
@@ -366,7 +434,7 @@
                         <dt>Группа:</dt>
                         <dd>до 15 чел.</dd>
                       </dl>
-                    </div>
+                    </div> -->
                     <div class="tours__image">
                       <picture>
                         <source type="image/webp" media="(max-width: 350px)" width="350" height="568" srcset="./img/content/tours/elbrus/elbrus-mobile@1x.webp 1x, ./img/content/tours/elbrus/elbrus-mobile@2x.webp 2x">
@@ -381,13 +449,30 @@
                     </div>
                   </li>
                   <li class="tours__item swiper-slide">
-                    <ul class="tours__data">
-                      <li class="tours__point">Алтай</li>
-                      <li class="tours__days">14 дней</li>
-                      <li class="tours__nights">13 ночей</li>
-                    </ul>
+                    <div class="tours__data">
+                      <div class="tours__point">
+                        <svg width="9" height="12" role="img">
+                            <use href="img/sprite.svg#location-pin"></use>
+                        </svg>
+                        <span>Алтай</span>
+                      </div>
+                      <div class="tours__data-wrapper">
+                        <div class="tours__days">
+                          <svg width="20" height="20" role="img">
+                            <use href="img/sprite.svg#sun"></use>
+                          </svg>
+                          <span>14 дней</span>
+                        </div>
+                        <div class="tours__nights">
+                          <svg width="20" height="20" role="img">
+                            <use href="img/sprite.svg#moon"></use>
+                          </svg>
+                          <span>13 ночей</span>
+                        </div>
+                      </div>
+                    </div>
                     <h3>Путь к подножию Белухи</h3>
-                    <div class="tours__description">
+                    <!-- <div class="tours__description">
                       <dl class="tours__level">
                         <dt>Сложность</dt>
                         <dd>
@@ -405,7 +490,7 @@
                         <dt>Группа:</dt>
                         <dd>до 25  чел.</dd>
                       </dl>
-                    </div>
+                    </div> -->
                     <div class="tours__image">
                       <picture>
                         <source type="image/webp" media="(max-width: 350px)" width="350" height="568" srcset="./img/content/tours/belukha/belukha-mobile@1x.webp 1x, ./img/content/tours/belukha/belukha-mobile@2x.webp 2x">
@@ -420,13 +505,30 @@
                     </div>
                   </li>
                   <li class="tours__item swiper-slide">
-                    <ul class="tours__data">
-                      <li class="tours__point">Адыгея</li>
-                      <li class="tours__days">7 дней</li>
-                      <li class="tours__nights">6 ночей</li>
-                    </ul>
-                    <h3>Через Фишт к Чёрному морю и обратно</h3>
-                    <div class="tours__description">
+                    <div class="tours__data">
+                      <div class="tours__point">
+                        <svg width="9" height="12" role="img">
+                            <use href="img/sprite.svg#location-pin"></use>
+                        </svg>
+                        <span>Адыгея</span>
+                      </div>
+                      <div class="tours__data-wrapper">
+                        <div class="tours__days">
+                          <svg width="20" height="20" role="img">
+                            <use href="img/sprite.svg#sun"></use>
+                          </svg>
+                          <span>7 дней</span>
+                        </div>
+                        <div class="tours__nights">
+                          <svg width="20" height="20" role="img">
+                            <use href="img/sprite.svg#moon"></use>
+                          </svg>
+                          <span>6 ночей</span>
+                        </div>
+                      </div>
+                    </div>
+                    <h3>Через Фишт к&nbsp;Чёрному морю и&nbsp;обратно</h3>
+                    <!-- <div class="tours__description">
                       <dl class="tours__level">
                         <dt>Сложность</dt>
                         <dd>
@@ -444,7 +546,7 @@
                         <dt>Группа:</dt>
                         <dd>до 22 чел.</dd>
                       </dl>
-                    </div>
+                    </div> -->
                     <div class="tours__image">
                       <picture>
                         <source type="image/webp" media="(max-width: 350px)" width="350" height="568" srcset="./img/content/tours/fisht/fisht-mobile@1x.webp 1x, ./img/content/tours/fisht/fisht-mobile@2x.webp 2x">
