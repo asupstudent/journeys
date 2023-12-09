@@ -10,6 +10,17 @@
 
 .hero__item {
   position: relative;
+  background-color: $color-elephant;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: $gradient-big-slider;
+  }
 }
 
 .hero__wrapper {
