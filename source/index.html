@@ -20,7 +20,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header class="header" data-test="hero">
         <h1 class="visually-hidden">Lifetour. Увлекательные походы в горы</h1>
         <nav class="nav nav--is-closed" data-menu="main-nav">
           <button class="nav__burger-button" type="button" data-menu="burger-button">
@@ -61,9 +61,7 @@
           <div class="nav__phone nav__phone--is-closed" data-menu="phone">
             <a class="nav__phone-link" href="tel:+788007253232">8 800 725-32-32</a>
           </div>
-          </nav>
-      </header>
-      <main>
+        </nav>
         <div class="hero">
           <div class="hero__swiper swiper" data-hero-slider="hero-slider">
             <ul class="hero__list swiper-wrapper">
@@ -71,7 +69,7 @@
                 <div class="container">
                   <div class="hero__wrapper">
                     <h2>Захватывающие вершины Кавказа</h2>
-                    <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
+                    <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на&nbsp;вершину горы Чегет.</p>
                     <a class="hero__btn btn" href="#">Смотреть тур</a>
                     <div class="hero__video">
                       <picture>
@@ -123,31 +121,31 @@
                 <div class="container">
                   <div class="hero__wrapper">
                     <h2>Невероятная природа Камчатки</h2>
-                    <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
+                    <p>Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в путешествие по&nbsp;одному из самых нетронутых уголков дикой природы в мире.</p>
                     <a class="hero__btn btn" href="#">Смотреть тур</a>
-                    <!-- <div class="hero__details">
+                    <div class="hero__details">
                       <span>
-                        <svg width="12" height="12" viewBox="0 0 12 12" role="img">
+                        <svg width="12" height="12" viewBox="0 0 12 12" role="img" focusable="false" aria-hidden="true">
                           <use href="img/sprite.svg#moon"></use>
                         </svg>
                         9 дней/10 ночей
                       </span>
                       <span>
-                        <svg width="12" height="12" viewBox="0 0 12 12" role="img">
+                        <svg width="12" height="12" viewBox="0 0 12 12" role="img" focusable="false" aria-hidden="true">
                           <use href="img/sprite.svg#level"></use>
                         </svg>
                         Средняя сложность
                       </span>
-                    </div> -->
+                    </div>
+                    <div class="hero__photos">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 1199px)" width="442" height="365" srcset="./img/content/hero/photos-tablet@1x.webp 1x, ./img/content/hero/photos-tablet@2x.webp 2x">
+                        <source type="image/webp" width="410" height="459" srcset="./img/content/hero/photos-desktop@1x.webp 1x, ./img/content/hero/photos-desktop@2x.webp 2x">
+                        <source type="image/png" media="(max-width: 1199px)" width="442" height="365" srcset="./img/content/hero/photos-tablet@1x.png 1x, ./img/content/hero/photos-tablet@2x.png 2x">
+                        <img src="./img/content/hero/photos-desktop@1x.png" width="410" height="459" srcset="./img/content/hero/photos-desktop@2x.png 2x" alt="Счастливые воспоминаня о Камчатке на фотографиях.">
+                      </picture>
+                    </div>
                   </div>
-                  <!-- <div class="hero__photos">
-                    <picture>
-                      <source type="image/webp" media="(max-width: 1199px)" width="442" height="365" srcset="./img/content/hero/photos-tablet@1x.webp 1x, ./img/content/hero/photos-tablet@2x.webp 2x">
-                      <source type="image/webp" width="410" height="459" srcset="./img/content/hero/photos-desktop@1x.webp 1x, ./img/content/hero/photos-desktop@2x.webp 2x">
-                      <source type="image/png" media="(max-width: 1199px)" width="442" height="365" srcset="./img/content/hero/photos-tablet@1x.png 1x, ./img/content/hero/photos-tablet@2x.png 2x">
-                      <img src="./img/content/hero/photos-desktop@1x.png" width="410" height="459" srcset="./img/content/hero/photos-desktop@2x.png 2x" alt="Счастливые воспоминаня о Камчатке на фотографиях.">
-                    </picture>
-                  </div> -->
                   <div class="hero__image">
                     <picture>
                       <source type="image/webp" media="(max-width: 350px)" width="350" height="568" srcset="./img/content/hero/kamchatka/kamchatka-mobile-350@1x.webp 1x, ./img/content/hero/kamchatka/kamchatka-mobile-350@2x.webp 2x">
@@ -166,26 +164,26 @@
                 <div class="container">
                   <div class="hero__wrapper">
                     <h2>Магические пейзажи Алтайского Края</h2>
-                    <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
+                    <p>Алтайский трекинг-тур — это&nbsp;захватывающее приключение с&nbsp;посещением магических и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
                     <a class="hero__btn btn" href="#">Смотреть тур</a>
-                    <!-- <div class="hero__details">
+                    <div class="hero__details">
                       <span>
-                        <svg width="12" height="12" viewBox="0 0 12 12" role="img">
+                        <svg width="12" height="12" viewBox="0 0 12 12" role="img" focusable="false" aria-hidden="true">
                           <use href="img/sprite.svg#moon"></use>
                         </svg>
                         8 дней/7 ночей
                       </span>
                       <span>
-                        <svg width="12" height="12" viewBox="0 0 12 12" role="img">
+                        <svg width="12" height="12" viewBox="0 0 12 12" role="img" focusable="false" aria-hidden="true">
                           <use href="img/sprite.svg#level"></use>
                         </svg>
                         Лёгкая сложность
                       </span>
-                    </div> -->
+                    </div>
+                    <div class="hero__audio">
+                      <iframe style="border:none;width:340px;height:220px;" width="340" height="220" src="https://music.yandex.ru/iframe/track/119107082/25474374"></iframe>
+                    </div>
                   </div>
-                  <!-- <div class="hero__audio">
-                    <iframe style="border:none;width:340px;height:220px;" width="340" height="220" src="https://music.yandex.ru/iframe/track/119107082/25474374"></iframe>
-                  </div> -->
                   <div class="hero__image">
                     <picture>
                       <source type="image/webp" media="(max-width: 350px)" width="350" height="568" srcset="./img/content/hero/altai/altai-mobile-350@1x.webp 1x, ./img/content/hero/altai/altai-mobile-350@2x.webp 2x">
@@ -201,21 +199,23 @@
                 </div>
               </li>
             </ul>
-            <div class="hero__pagination swiper-pagination" data-hero-pagination="hero-pagination"></div>
+            <div class="hero__swiper-pagination container swiper-pagination" data-hero-swiper-pagination="hero-swiper-pagination"></div>
           </div>
         </div>
-        <section class="tours">
+      </header>
+      <main>
+        <section class="tours" data-test="tours">
           <div class="container">
             <div class="tours__wrapper">
-              <header class="tours__header" data-text="Ближайшие туры">
-                <h2 class="tours__title">Ближайшие туры</h2>
-                <div class="swiper-navigation">
-                  <button class="tours__button tours__button--prev" aria-label="Назад." type="button" data-swiper="button-prev">
+              <header class="tours__header">
+                <h2 class="title" data-text="Ближайшие туры">Ближайшие туры</h2>
+                <div class="slider-navigation swiper-navigation">
+                  <button class="slider-navigation__button slider-navigation__button--prev" aria-label="Назад." type="button" data-swiper="button-prev">
                     <svg width="14" height="9" role="img">
                       <use href="img/sprite.svg#arrow"></use>
                     </svg>
                   </button>
-                  <button class="tours__button tours__button--next" aria-label="Вперед." type="button" data-swiper="button-next">
+                  <button class="slider-navigation__button slider-navigation__button--next" aria-label="Вперед." type="button" data-swiper="button-next">
                     <svg width="14" height="9" role="img">
                       <use href="img/sprite.svg#arrow"></use>
                     </svg>

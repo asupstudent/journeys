@@ -20,82 +20,9 @@
   align-items: center;
   justify-content: space-between;
   margin: 0 0 53px;
-  overflow-x: clip;
-
-  &::after {
-    position: absolute;
-    content: attr(data-text);
-    width: 542px;
-    left: 0;
-    bottom: 0;
-    font-weight: 800;
-    font-size: 55px;
-    line-height: 55px;
-    color: $color-elephant;
-    opacity: 0.03;
-    z-index: -1;
-  }
 
   @include vp-1199 {
     margin-bottom: 25px;
-  }
-}
-
-.tours__title {
-  margin: 0;
-  padding: 0;
-  font-size: 35px;
-  font-weight: 800;
-  line-height: 35px;
-
-  @include vp-767 {
-    font-size: 22px;
-    line-height: 22px;
-  }
-
-  @include vp-349 {
-    font-size: 20px;
-    line-height: 20px;
-  }
-}
-
-.tours__button {
-  width: 37px;
-  height: 35px;
-  background-color: $color-navy-blue;
-  border: none;
-  cursor: pointer;
-
-  & svg {
-    color: $color-default-white;
-  }
-
-  @include hover-focus {
-    border: 1px solid $color-elephant;
-    background-color: $color-default-white;
-
-    & svg {
-      color: $color-elephant;
-    }
-  }
-
-  &--next {
-    transform: rotate(180deg);
-  }
-
-  @include active {
-    background-color: $color-resolution-blue;
-    border: none;
-
-    & svg {
-      color: $color-default-white;
-    }
-  }
-
-  @include without-outline;
-
-  @include disabled {
-    background-color: $color-nobel;
   }
 }
 

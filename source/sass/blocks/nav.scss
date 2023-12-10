@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  z-index: 2;
+  z-index: 3;
   max-width: 1200px;
   width: 100%;
   padding: 32px 20px;
@@ -25,11 +25,37 @@
       "nav nav";
     grid-template-columns: 26px 1fr;
     grid-template-rows: 42px auto auto;
-    padding: 15px;
+    padding: 15px 15px 13px;
   }
 
   &--is-opened {
     background-color: $color-default-white;
+
+    @include vp-1199 {
+      padding: 20px 55px 20px 40px;
+
+      .nav__list {
+        margin-top: 0;
+        padding: 47px 0 45px;
+      }
+
+      .nav__burger-button {
+        margin: 0 100px 0 15px;
+      }
+    }
+
+    @include vp-767 {
+      padding: 15px 15px 15px 10px;
+
+      .nav__list {
+        padding: 23px 0 30px;
+        row-gap: 12px;
+      }
+
+      .nav__burger-button {
+        margin-left: 5px;
+      }
+    }
 
     .nav__burger-button {
       @include focus {
@@ -60,18 +86,18 @@
   gap: 21px;
   list-style-type: none;
   padding: 0;
-  width: 584px;
-  margin: 0 auto;
+  width: 585px;
+  margin: 1px auto 0;
 
   @include vp-1199 {
     display: none;
     align-items: flex-start;
     flex-direction: column;
-    row-gap: 26px;
+    row-gap: 18px;
     width: 100%;
     order: 4;
     background-color: $color-default-white;
-    padding: 50px 45px 70px;
+    padding: 50px 0 70px;
     z-index: 3;
   }
 
@@ -209,6 +235,7 @@
 
   @include vp-767 {
     grid-area: phone;
+    margin-top: 12px;
   }
 }
 
@@ -219,6 +246,8 @@
   cursor: pointer;
   background-color: transparent;
   z-index: 3;
+  width: 26px;
+  height: 26px;
 
   svg + svg {
     display: none;

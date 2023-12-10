@@ -77,14 +77,19 @@
 
     @include vp-1199 {
       text-align: center;
-      margin: 0 auto 25px;
-      max-width: 500px;
+      margin: 0 auto 26px;
+      max-width: 460px;
+    }
+
+    @include vp-1023 {
+      max-width: 473px;
     }
 
     @include vp-767 {
       font-size: 15px;
       line-height: 20px;
       margin: 0 auto 60px;
+      padding: 0 25px;
       max-width: 332px;
     }
   }
@@ -97,6 +102,10 @@
 
 .hero__btn {
   margin-bottom: 40px;
+
+  @include vp-1199 {
+    margin-bottom: auto;
+  }
 }
 
 .hero__details {
@@ -109,14 +118,18 @@
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
-    padding: 13px 22px;
+    padding: 13px 19px 13px 24px;
     border: 1px solid $color-white-50;
     color: $color-default-white;
   }
 
+  span + span {
+    padding-right: 20px;
+  }
+
   svg {
     position: relative;
-    top: 1px;
+    top: 2px;
     left: -5px;
   }
 
@@ -137,8 +150,13 @@
     position: relative;
     top: auto;
     right: auto;
+    bottom: 150px;
     width: 442px;
     height: 300px;
+  }
+
+  @include vp-1023 {
+    bottom: 147px;
   }
 
   @include vp-767 {
@@ -243,78 +261,107 @@
   }
 }
 
-// .hero__photos {
-//   position: absolute;
-//   width: 410px;
-//   height: 459px;
-//   right: 321px;
-//   top: 200px;
+.hero__photos {
+  position: absolute;
+  width: 410px;
+  height: 459px;
+  right: 0;
+  bottom: 154px;
 
-//   img {
-//     width: 100%;
-//     object-fit: contain;
-//     height: auto;
-//   }
+  @include vp-1199 {
+    width: 442px;
+    height: 365px;
+    bottom: 122px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+  }
 
-//   @include vp-767 {
-//     display: none;
-//   }
-// }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 
-// .hero__audio {
-//   align-self: end;
-//   margin-bottom: 100px;
+  @include vp-767 {
+    display: none;
+  }
+}
 
-//   iframe {
-//     width: 340px;
-//     height: 220px;
-//   }
+.hero__audio {
+  position: absolute;
+  width: 340px;
+  height: 220px;
+  bottom: 154px;
+  right: 0;
 
-//   @include vp-767 {
-//     display: none;
-//   }
-// }
+  @include vp-1199 {
+    bottom: 267px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+  }
 
-// .swiper {
-//   .hero__pagination {
-//     display: flex;
-//     max-width: 100px;
-//     width: fit-content;
-//     flex-wrap: wrap;
-//     gap: 20px;
-//     right: 145px;
-//     left: auto;
-//     bottom: 210px;
-//   }
+  @include vp-767 {
+    display: none;
+  }
 
-//   .swiper-pagination-bullet {
-//     width: 10px;
-//     height: 10px;
-//     border: 1px solid $color-default-white;
-//     background-color: $color-transparent;
-//     opacity: 1;
+  iframe {
+    width: 340px;
+    height: 220px;
+  }
+}
+
+.swiper {
+  .hero__swiper-pagination {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    padding-left: 500px;
+    gap: 12px;
+    right: -7px;
+    bottom: 97px;
+
+    @include vp-1199 {
+      padding-left: 45px;
+      bottom: 40px;
+      right: 0;
+      justify-content: center;
+    }
+
+    @include vp-767 {
+      padding-left: 15px;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border: 1px solid $color-default-white;
+    background-color: $color-transparent;
+    opacity: 1;
 
 
-//     @include hover {
-//       background-color: $color-gainsboro;
-//     }
+    @include hover {
+      background-color: $color-gainsboro;
+    }
 
-//     @include active {
-//       background-color: $color-white-50;
-//     }
+    @include active {
+      background-color: $color-white-50;
+    }
 
-//     @include focus {
-//       outline-offset: 1px;
-//       outline: 1px solid $color-white-50;
-//     }
+    @include focus {
+      outline-offset: 1px;
+      outline: 1px solid $color-white-50;
+    }
 
-//     @include vp-767 {
-//       width: 8px;
-//       height: 8px;
-//     }
-//   }
+    @include vp-767 {
+      width: 8px;
+      height: 8px;
+    }
+  }
 
-//   .swiper-pagination-bullet-active {
-//     background: $color-default-white;
-//   }
-// }
+  .swiper-pagination-bullet-active {
+    background: $color-default-white;
+  }
+}

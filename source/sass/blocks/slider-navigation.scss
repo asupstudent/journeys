@@ -1,0 +1,48 @@
+.slider-navigation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  gap: 4px;
+}
+
+.slider-navigation__button {
+  width: 37px;
+  height: 35px;
+  background-color: $color-navy-blue;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+
+  & svg {
+    color: $color-default-white;
+  }
+
+  @include hover-focus {
+    border: 1px solid $color-elephant;
+    background-color: $color-default-white;
+
+    & svg {
+      color: $color-elephant;
+    }
+  }
+
+  &--next {
+    transform: rotate(180deg);
+  }
+
+  @include active {
+    background-color: $color-resolution-blue;
+    border: none;
+
+    & svg {
+      color: $color-default-white;
+    }
+  }
+
+  @include without-outline;
+
+  @include disabled {
+    background-color: $color-nobel;
+  }
+}

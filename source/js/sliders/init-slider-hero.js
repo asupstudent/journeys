@@ -1,5 +1,5 @@
 const sliderHero = document.querySelector('[data-hero-slider="hero-slider"]');
-const sliderHeroPagination = document.querySelector('[data-hero-pagination="hero-pagination"]');
+const sliderHeroPagination = document.querySelector('[data-hero-swiper-pagination="hero-swiper-pagination"]');
 
 const setSliderHero = () => {
   return new window.Swiper(sliderHero, {
