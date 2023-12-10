@@ -147,6 +147,28 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 80px;
+      height: 1px;
+      background-color: $color-white-20;
+      left: 0;
+      bottom: -15px;
+    }
+
+    @include vp-1199 {
+      padding-right: 150px;
+    }
+
+    @include vp-1023 {
+      padding-right: 45px;
+    }
+
+    @include vp-349 {
+      padding-right: 25px;
+    }
   }
 }
 
@@ -200,4 +222,31 @@
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+.tours__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  dl,
+  dt,
+  dd {
+    margin: 0;
+    padding: 0;
+    color: $color-default-white;
+  }
+
+  dt {
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 300;
+  }
+
+  dd {
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 700;
+  }
 }
