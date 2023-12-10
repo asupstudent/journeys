@@ -250,3 +250,45 @@
     font-weight: 700;
   }
 }
+
+.tours__link {
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    color: $color-elephant;
+
+    @include hover-focus {
+      color: $color-resolution-blue;
+
+      svg {
+        stroke: $color-resolution-blue;
+      }
+    }
+
+    @include active {
+      color: $color-navy-blue;
+
+      svg {
+        stroke: $color-navy-blue;
+      }
+    }
+
+    @include disabled {
+      color: $color-navy-blue;
+
+      svg {
+        display: none;
+      }
+    }
+  }
+}
