@@ -1,0 +1,43 @@
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $color-elephant-30;
+  align-self: flex-start;
+  cursor: pointer;
+
+  svg {
+    color: $color-elephant;
+  }
+
+  &--training {
+    width: 24px;
+    height: 24px;
+  }
+
+  &--footer {
+    width: 30px;
+    height: 30px;
+  }
+
+  @include hover-focus {
+    border: 1px solid $color-elephant;
+  }
+
+  @include active {
+    border: none;
+    background-color: $color-navy-blue;
+
+    svg {
+      color: $color-default-white;
+    }
+  }
+
+  @include disabled {
+    border: 1px solid $color-elephant-30;
+
+    svg {
+      color: $color-elephant-30;
+    }
+  }
+}
