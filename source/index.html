@@ -209,7 +209,7 @@
             <div class="tours__wrapper">
               <div class="tours__header">
                 <h2 class="title" data-text="Ближайшие туры">Ближайшие туры</h2>
-                <div class="slider-navigation swiper-navigation">
+                <div class="tours__slider-navigation slider-navigation swiper-navigation">
                   <button class="slider-navigation__button slider-navigation__button--prev" aria-label="Назад." type="button" data-swiper-tours="button-prev">
                     <svg width="14" height="9" role="img">
                       <use href="img/sprite.svg#arrow"></use>
@@ -577,23 +577,36 @@
           <div class="training__wrapper container">
             <h2 class="title" data-text="Обучение">Обучение</h2>
             <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
-            <h3>Наши инструкторы</h3>
-            <div class="slider-navigation swiper-navigation">
-              <button class="slider-navigation__button slider-navigation__button--prev" aria-label="Назад." type="button" data-swiper="button-prev">
-                <svg width="14" height="9" role="img">
-                  <use href="img/sprite.svg#arrow"></use>
-                </svg>
-              </button>
-              <button class="slider-navigation__button slider-navigation__button--next" aria-label="Вперед." type="button" data-swiper="button-next">
-                <svg width="14" height="9" role="img">
-                  <use href="img/sprite.svg#arrow"></use>
-                </svg>
-              </button>
+            <div class="training__intro">
+              <h3>Наши инструкторы</h3>
+              <div class="training__slider-navigation slider-navigation swiper-navigation">
+                <button class="slider-navigation__button slider-navigation__button--prev" aria-label="Назад." type="button" data-swiper="button-prev">
+                  <svg width="14" height="9" role="img">
+                    <use href="img/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+                <button class="slider-navigation__button slider-navigation__button--next" aria-label="Вперед." type="button" data-swiper="button-next">
+                  <svg width="14" height="9" role="img">
+                    <use href="img/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
             <div class="training__swiper swiper" data-swiper="training">
               <ul class="training__list swiper-wrapper">
                 <li class="training__item swiper-slide">
-
+                  <div class="training__image">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 350px)" width="290" height="200" srcset="./img/content/instructors/instructor-alexander-mobile@1x.webp 1x, ./img/content/instructors/instructor-alexander-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 768px)" width="183" height="200" srcset="./img/content/instructors/instructor-alexander-tablet-768@1x.webp 1x, ./img/content/instructors/instructor-alexander-tablet-768@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1024px)" width="268" height="200" srcset="./img/content/instructors/instructor-alexander-tablet-1024@1x.webp 1x, ./img/content/instructors/instructor-alexander-tablet-1024@2x.webp 2x">
+                      <source type="image/webp" width="255" height="200" srcset="./img/content/instructors/instructor-alexander-desktop@1x.webp 1x, ./img/content/instructors/instructor-alexander-desktop@2x.webp 2x">
+                      <source type="image/jpeg" media="(max-width: 350px)" width="290" height="200" srcset="./img/content/instructors/instructor-alexander-mobile@1x.jpg 1x, ./img/content/instructors/instructor-alexander-mobile@2x.jpg 2x">
+                      <source type="image/jpeg" media="(max-width: 768px)" width="183" height="200" srcset="./img/content/instructors/instructor-alexander-tablet-768@1x.jpg 1x, ./img/content/instructors/instructor-alexander-tablet-768@2x.jpg 2x">
+                      <source type="image/jpeg" media="(max-width: 1024px)" width="268" height="200" srcset="./img/content/instructors/instructor-alexander-tablet-1024@1x.jpg 1x, ./img/content/instructors/instructor-alexander-tablet-1024@2x.jpg 2x">
+                      <img src="./img/content/instructors/instructor-alexander-desktop@1x.jpg" width="255" height="200" srcset="./img/content/instructors/instructor-alexander-desktop@2x.jpg 2x" alt="Инструктор Александр.">
+                    </picture>
+                  </div>
                 </li>
               </ul>
             </div>
