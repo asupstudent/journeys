@@ -1,3 +1,12 @@
 .process {
-  background-color: $color-blue-violet;
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.process__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
