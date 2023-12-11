@@ -2458,6 +2458,10 @@ button,
   justify-content: space-between;
 }
 
+.process {
+  background-color: #9747ff;
+}
+
 @media (max-width: 1199px) {
   .container {
     padding: 0 45px;
@@ -2646,6 +2650,7 @@ button,
   .training__item {
     min-width: 213px;
     max-width: 100%;
+    min-height: 388px;
   }
 }
 
@@ -2807,6 +2812,7 @@ button,
   .training__item {
     min-width: 100%;
     max-width: 100%;
+    min-height: 356px;
   }
 }
 
