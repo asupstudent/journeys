@@ -1,6 +1,6 @@
 const sliderTours = document.querySelector('[data-swiper="tours"]');
-const buttonNext = document.querySelector('[data-swiper="button-next"]');
-const buttonPrev = document.querySelector('[data-swiper="button-prev"]');
+const buttonNext = document.querySelector('[data-swiper-tours="button-next"]');
+const buttonPrev = document.querySelector('[data-swiper-tours="button-prev"]');
 
 const setSliderTours = () => {
   return new window.Swiper(sliderTours, {

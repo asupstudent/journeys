@@ -321,7 +321,7 @@
 .swiper {
   .hero__swiper-pagination {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     flex-wrap: wrap;
     padding-left: 500px;
     gap: 12px;
