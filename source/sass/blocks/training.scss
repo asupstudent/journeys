@@ -50,7 +50,7 @@
 
 .training__swiper {
   max-width: 1200px;
-  margin: 0 auto 56px;
+  margin: 0 auto 58px;
 
 
   @include vp-1199 {
@@ -75,12 +75,18 @@
   display: flex;
   flex-direction: column;
   height: auto;
+  max-width: 298px;
 
   p {
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
     margin: 0;
+    max-width: 255px;
+  }
+
+  @include vp-767 {
+    max-width: 100%;
   }
 }
 
@@ -106,4 +112,9 @@
     max-width: 238px;
     margin: 0 0 15px;
   }
+}
+
+.training_process {
+  padding-left: 120px;
+  margin-left: auto;
 }
