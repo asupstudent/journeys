@@ -4,14 +4,28 @@
 }
 
 .about__title {
-  margin-bottom: 32px;
+  margin-bottom: 27px;
+
+  @include vp-1199 {
+    margin-left: 6px;
+    margin-bottom: 6px;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+    margin-bottom: -2px;
+  }
 }
 
 .about__image {
   position: absolute;
   z-index: -1;
   left: 0;
-  top: 56px;
+  top: 2px;
+
+  @include vp-1199 {
+    top: 57px;
+  }
 
   @include vp-767 {
     position: static;
@@ -24,7 +38,7 @@
 
 .about__wrapper {
   max-width: 1200px;
-  padding: 56px 0 79px;
+  padding: 25px 0 79px;
 
   @include vp-1199 {
     padding: 15px 0 0;
@@ -32,6 +46,7 @@
 
   @include vp-767 {
     max-width: 100%;
+    padding-top: 7px;
   }
 }
 
@@ -40,7 +55,7 @@
   max-width: 585px;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 29px;
 
   @include vp-1199 {
     max-width: 526px;
@@ -52,24 +67,27 @@
 
   @include vp-767 {
     max-width: 100%;
+    gap: 27px;
   }
 }
 
 .about__history,
 .about__goal {
   h3 {
-    margin: 0 0 20px;
+    margin: 0 0 16px;
     padding: 0;
     font-size: 21px;
     line-height: 21px;
     font-weight: 700;
 
     @include vp-1199 {
+      margin-bottom: 11px;
       font-size: 18px;
       line-height: 18px;
     }
 
     @include vp-767 {
+      margin-bottom: 13px;
       font-size: 16px;
       line-height: 16px;
     }
