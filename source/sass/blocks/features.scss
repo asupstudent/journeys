@@ -1,0 +1,11 @@
+.features__wrapper {
+  padding: 42px 0 81px;
+
+  @include vp-1199 {
+    padding: 45px;
+  }
+
+  @include vp-767 {
+    padding: 40px 0;
+  }
+}
