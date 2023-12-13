@@ -2681,7 +2681,6 @@ button,
 
 .about {
   position: relative;
-  min-height: 600px;
 }
 
 .about__title {
@@ -2732,7 +2731,67 @@ button,
 }
 
 .reviews {
-  background-color: #0266c1;
+  position: relative;
+}
+
+.reviews__wrapper {
+  padding: 42px 0 0;
+}
+
+.reviews__header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.reviews__title {
+  margin-top: 13px;
+}
+
+.reviews__slider-navigation {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.reviews__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.review {
+  max-width: 700px;
+  height: auto;
+  padding: 20px 40px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -webkit-box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
+  box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
+  background-color: #ffffff;
+}
+
+.review__avatar {
+  min-width: 258px;
+  min-height: 253px;
+  background-color: #1c3374;
+}
+
+.review__avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 @media (max-width: 1199px) {
@@ -2969,6 +3028,20 @@ button,
     margin-bottom: 11px;
     font-size: 18px;
     line-height: 18px;
+  }
+
+  .reviews__wrapper {
+    padding: 37px 0;
+  }
+
+  .review {
+    padding-right: 30px;
+    max-width: 565px;
+  }
+
+  .review__avatar {
+    min-width: 186px;
+    min-height: 237px;
   }
 }
 
@@ -3212,6 +3285,26 @@ button,
   .about__history p,
   .about__goal p {
     line-height: 20px;
+  }
+
+  .reviews__wrapper {
+    padding: 30px 0;
+  }
+
+  .review {
+    max-width: 100%;
+    min-width: 290px;
+    padding: 20px;
+    gap: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .review__avatar {
+    min-width: 100%;
+    min-height: 169px;
   }
 }
 
