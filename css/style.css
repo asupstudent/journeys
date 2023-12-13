@@ -2731,6 +2731,10 @@ button,
   line-height: 22px;
 }
 
+.reviews {
+  background-color: #0266c1;
+}
+
 @media (max-width: 1199px) {
   .container {
     padding: 0 45px;
