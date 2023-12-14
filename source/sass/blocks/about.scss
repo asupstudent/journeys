@@ -43,6 +43,10 @@
     padding: 15px 0 131px;
   }
 
+  @include vp-1023 {
+    padding-bottom: 0;
+  }
+
   @include vp-767 {
     max-width: 100%;
     padding-top: 7px;
