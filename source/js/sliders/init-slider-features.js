@@ -17,7 +17,9 @@ const initSliderFeatures = () => {
       centeredSlides: true,
       breakpoints: {
         1200: {
+          initialSlide: 2,
           spaceBetween: 30,
+          slidesPerView: 3.585,
         },
       },
     });
