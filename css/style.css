@@ -2872,6 +2872,12 @@ button,
   border: 1px solid #0266c1;
 }
 
+.features__slider-navigation {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 @media (max-width: 1199px) {
   .container {
     padding: 0 45px;
@@ -3171,6 +3177,16 @@ button,
     -ms-flex-pack: center;
     justify-content: center;
     gap: 30px;
+  }
+
+  .features__item svg {
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+  }
+
+  .features__slider-navigation {
+    display: none;
   }
 }
 
@@ -3474,6 +3490,12 @@ button,
 
   .features__list {
     gap: 15px;
+  }
+
+  .features__item svg {
+    width: 42px;
+    height: 42px;
+    padding: 8px;
   }
 }
 
