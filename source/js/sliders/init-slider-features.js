@@ -6,7 +6,8 @@ let featuresSwiper;
 
 const initSliderFeatures = () => {
   if (sliderFeatures && window.innerWidth > 1200) {
-    return new window.Swiper(sliderFeatures, {
+    // eslint-disable-next-line
+    featuresSwiper = new Swiper(sliderFeatures, {
       loop: true,
       navigation: {
         nextEl: buttonNext,
@@ -21,7 +22,6 @@ const initSliderFeatures = () => {
       },
     });
   }
-  return null;
 };
 
 const convertSwiper = () => {
