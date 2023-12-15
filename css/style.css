@@ -2907,6 +2907,45 @@ button,
   list-style: none;
 }
 
+.gallery__item {
+  min-height: 449px;
+}
+
+.gallery__item--first {
+  max-width: 275px;
+}
+
+.gallery__item--second {
+  max-width: 272px;
+}
+
+.gallery__item--third {
+  max-width: 276px;
+}
+
+.gallery__item--wide {
+  max-width: 298px;
+  height: auto;
+}
+
+.gallery__item-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.gallery__item-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 @media (max-width: 1199px) {
   .container {
     padding: 0 45px;
