@@ -7,3 +7,36 @@
   padding: 0;
   list-style: none;
 }
+
+.gallery__item {
+  min-height: 449px;
+
+  &--first {
+    max-width: 275px;
+  }
+
+  &--second {
+    max-width: 272px;
+  }
+
+  &--third {
+    max-width: 276px;
+  }
+
+  &--wide {
+    max-width: 298px;
+    height: auto;
+  }
+}
+
+.gallery__item-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

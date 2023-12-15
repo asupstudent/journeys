@@ -11,22 +11,22 @@ const setSliderGallery = () => {
 
     breakpoints: {
       1200: {
-        slidesPerView: 5,
+        slidesPerView: 'auto',
         spaceBetween: 5,
       },
 
       1024: {
-        slidesPerView: 4,
+        slidesPerView: 'auto',
         spaceBetween: 5,
       },
 
       768: {
-        slidesPerView: 4,
+        slidesPerView: 'auto',
         spaceBetween: 5,
       },
 
       350: {
-        slidesPerView: 2,
+        slidesPerView: 'auto',
         spaceBetween: 3,
       },
     },
