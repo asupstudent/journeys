@@ -2897,6 +2897,16 @@ button,
   display: none;
 }
 
+.gallery__wrapper {
+  margin: 0;
+}
+
+.gallery__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 @media (max-width: 1199px) {
   .container {
     padding: 0 45px;
