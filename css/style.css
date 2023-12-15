@@ -2848,7 +2848,7 @@ button,
 }
 
 .features__item {
-  padding: 40px 20px;
+  padding: 39px 18px;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2868,14 +2868,33 @@ button,
 .features__item svg {
   width: 54px;
   height: 54px;
-  padding: 16px;
-  border: 1px solid #0266c1;
+  padding: 15px;
+  outline: 1px solid #0266c1;
+  outline-offset: -1px;
+}
+
+.features__item h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  margin: 30px 0 15px;
+}
+
+.features__item p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0;
 }
 
 .features__slider-navigation {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.features__br {
+  display: none;
 }
 
 @media (max-width: 1199px) {
@@ -3042,13 +3061,16 @@ button,
     justify-content: center;
   }
 
-  .title--smaller {
+  .title--training,
+  .title--about,
+  .title--reviews {
     font-size: 25px;
     line-height: 25px;
   }
 
-  .title--smaller::after {
-    top: -13px;
+  .title--training::after,
+  .title--about::after,
+  .title--reviews::after {
     font-size: 40px;
     line-height: 40px;
   }
@@ -3079,6 +3101,10 @@ button,
     max-width: 560px;
   }
 
+  .training__title::after {
+    top: -13px;
+  }
+
   .training__swiper {
     max-width: 768px;
     margin: 0 auto 25px;
@@ -3093,6 +3119,10 @@ button,
   .about__title {
     margin-left: 6px;
     margin-bottom: 6px;
+  }
+
+  .about__title::after {
+    top: -13px;
   }
 
   .about__image {
@@ -3125,6 +3155,10 @@ button,
   .reviews__title {
     margin-top: 11px;
     margin-left: 1px;
+  }
+
+  .reviews__title::after {
+    top: -13px;
   }
 
   .reviews__list {
@@ -3179,10 +3213,32 @@ button,
     gap: 30px;
   }
 
+  .features__item {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    max-width: 452px;
+    padding: 29px 20px 29px;
+  }
+
+  .features__item:last-child {
+    max-width: 380px;
+  }
+
   .features__item svg {
     width: 48px;
     height: 48px;
     padding: 12px;
+  }
+
+  .features__item h3 {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 26px 0 14px;
+  }
+
+  .features__item p {
+    font-size: 14px;
+    line-height: 22px;
   }
 
   .features__slider-navigation {
@@ -3213,6 +3269,19 @@ button,
 
   .reviews__wrapper {
     padding: 46px 0;
+  }
+
+  .features__item {
+    max-width: 324px;
+    padding: 29px 19px 29px;
+  }
+
+  .features__item:last-child {
+    min-width: 380px;
+  }
+
+  .features__item:last-child h3 {
+    padding: 0 70px;
   }
 }
 
@@ -3348,13 +3417,21 @@ button,
     line-height: 22px;
   }
 
-  .title--smaller {
+  .title--training,
+  .title--about,
+  .title--reviews {
     font-size: 22px;
     line-height: 22px;
   }
 
-  .title--smaller::after {
-    top: -4px;
+  .title--training::after,
+  .title--about::after,
+  .title--reviews::after {
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  .title--features::after {
     font-size: 26px;
     line-height: 26px;
   }
@@ -3372,6 +3449,10 @@ button,
     max-width: 100%;
     font-size: 14px;
     line-height: 20px;
+  }
+
+  .training__title::after {
+    top: -4px;
   }
 
   .training__swiper {
@@ -3410,6 +3491,10 @@ button,
     margin-bottom: -2px;
   }
 
+  .about__title::after {
+    top: -4px;
+  }
+
   .about__image {
     position: static;
   }
@@ -3446,6 +3531,10 @@ button,
 
   .reviews__header {
     margin-bottom: 2px;
+  }
+
+  .reviews__title::after {
+    top: -4px;
   }
 
   .reviews__list {
@@ -3488,14 +3577,52 @@ button,
     padding: 40px 0;
   }
 
+  .features__title {
+    margin-bottom: 19px;
+  }
+
+  .features__title::after {
+    top: -4px;
+  }
+
   .features__list {
     gap: 15px;
+  }
+
+  .features__item {
+    max-width: 100%;
+    padding: 19px 10px;
+    -ms-flex-preferred-size: 91.5%;
+    flex-basis: 91.5%;
+  }
+
+  .features__item:last-child {
+    min-width: 320px;
+  }
+
+  .features__item:last-child h3 {
+    padding: 0 60px;
   }
 
   .features__item svg {
     width: 42px;
     height: 42px;
-    padding: 8px;
+    padding: 9px;
+  }
+
+  .features__item h3 {
+    font-size: 14px;
+    line-height: 14px;
+    margin: 20px 0 15px;
+  }
+
+  .features__item p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .features__br {
+    display: block;
   }
 }
 
