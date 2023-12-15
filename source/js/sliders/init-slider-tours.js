@@ -20,7 +20,7 @@ const setSliderTours = () => {
         spaceBetween: 18,
       },
 
-      320: {
+      350: {
         slidesPerView: 1,
         spaceBetween: 18,
       },

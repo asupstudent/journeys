@@ -20,7 +20,7 @@ const setSliderTraining = () => {
         spaceBetween: 20,
       },
 
-      320: {
+      350: {
         slidesPerView: 1,
         spaceBetween: 20,
       },

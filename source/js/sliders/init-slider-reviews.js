@@ -27,7 +27,7 @@ const setSliderReviews = () => {
         spaceBetween: 30,
       },
 
-      320: {
+      350: {
         slidesPerView: 1,
         spaceBetween: 20,
       },
