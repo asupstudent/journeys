@@ -2261,7 +2261,18 @@ button,
 }
 
 .tours__wrapper {
-  padding: 100px 0;
+  padding: 123px 0 109px;
+  position: relative;
+  z-index: 3;
+}
+
+.tours__clouds-big {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 602px;
+  height: 1630px;
 }
 
 .tours__header {
@@ -2275,13 +2286,17 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 0 0 53px;
+  margin: 0 0 50px;
 }
 
 .tours__slider-navigation {
   position: absolute;
-  top: 0;
+  top: -3px;
   right: 0;
+}
+
+.tours__swiper {
+  margin-bottom: 11px;
 }
 
 .tours__list {
@@ -2317,9 +2332,13 @@ button,
   z-index: -1;
 }
 
+.tours__item--no-gradient::before {
+  background: rgba(0, 0, 0, 0.2);
+}
+
 .tours__item h3 {
   position: relative;
-  margin: 0 0 31px;
+  margin: 0 0 30px;
   padding: 0 70px 0 0;
   color: #ffffff;
   font-size: 24px;
@@ -2359,7 +2378,7 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: auto 0 15px;
+  margin: auto 0 16px;
   padding: 0;
   list-style: none;
   max-width: 100%;
@@ -2374,7 +2393,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 14px;
+  gap: 15px;
   margin-left: auto;
 }
 
@@ -2385,9 +2404,14 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 6px 12px;
+  padding: 8px 13px 8px 12px;
   background-color: #0266c1;
   gap: 6px;
+}
+
+.tours__point svg {
+  margin-left: 4px;
+  margin-right: 3px;
 }
 
 .tours__days,
@@ -2408,9 +2432,9 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
 .tours__description dl,
@@ -2422,16 +2446,24 @@ button,
 }
 
 .tours__description dt {
-  margin-bottom: 4px;
   font-size: 12px;
   line-height: 12px;
   font-weight: 300;
 }
 
 .tours__description dd {
+  margin-top: 7px;
   font-size: 13px;
   line-height: 13px;
   font-weight: 700;
+}
+
+.tours__description dl.tours__complexity {
+  margin-bottom: -2px;
+}
+
+.tours__description dl.tours__complexity dt {
+  margin-bottom: -3px;
 }
 
 .tours__link {
@@ -2456,8 +2488,14 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   color: #2d383f;
+}
+
+.tours__link a svg {
+  position: relative;
+  bottom: 1px;
+  left: 1px;
 }
 
 .tours__link a.focus-visible:focus,
@@ -3181,11 +3219,16 @@ button,
   }
 
   .tours__wrapper {
-    padding: 45px 0;
+    padding: 68px 0 54px;
+  }
+
+  .tours__clouds-big {
+    width: 602px;
+    height: 1364px;
   }
 
   .tours__header {
-    margin-bottom: 25px;
+    margin-bottom: 22px;
   }
 
   .tours__list {
@@ -3592,6 +3635,11 @@ button,
 
   .tours__wrapper {
     padding: 35px 0;
+  }
+
+  .tours__clouds-big {
+    width: 171px;
+    height: 595px;
   }
 
   .tours__item {
