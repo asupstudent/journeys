@@ -2897,8 +2897,44 @@ button,
   display: none;
 }
 
-.gallery__wrapper {
-  margin: 0;
+.gallery {
+  padding-top: 23px;
+  padding-bottom: 3px;
+}
+
+.gallery__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.gallery__title {
+  margin-bottom: 24px;
+}
+
+.gallery__intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.gallery__intro p {
+  margin: 0 0 45px;
+  max-width: 693px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.gallery__slider-navigation {
+  margin-top: 5px;
 }
 
 .gallery__list {
@@ -2908,7 +2944,8 @@ button,
 }
 
 .gallery__item {
-  min-height: 449px;
+  max-height: 450px;
+  margin-right: 5px;
 }
 
 .gallery__item--first {
@@ -2928,6 +2965,14 @@ button,
   height: auto;
 }
 
+.gallery__item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background-color: #0266c1;
+}
+
 .gallery__item-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2944,6 +2989,7 @@ button,
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  background-color: #0266c1;
 }
 
 @media (max-width: 1199px) {
@@ -3112,16 +3158,26 @@ button,
 
   .title--training,
   .title--about,
-  .title--reviews {
+  .title--reviews,
+  .title--gallery {
     font-size: 25px;
     line-height: 25px;
   }
 
   .title--training::after,
   .title--about::after,
-  .title--reviews::after {
+  .title--reviews::after,
+  .title--gallery::after {
     font-size: 40px;
     line-height: 40px;
+  }
+
+  .title--gallery::after {
+    top: -13px;
+  }
+
+  .slider-navigation__button--gallery {
+    width: 34px;
   }
 
   .tours__wrapper {
@@ -3293,6 +3349,33 @@ button,
   .features__slider-navigation {
     display: none;
   }
+
+  .gallery {
+    padding-top: 18px;
+    padding-bottom: 0;
+  }
+
+  .gallery__title {
+    margin-bottom: 17px;
+  }
+
+  .gallery__intro p {
+    margin-bottom: 21px;
+    max-width: 420px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .gallery__slider-navigation {
+    margin-top: 31px;
+  }
+
+  .gallery__item--first,
+  .gallery__item--second,
+  .gallery__item--third,
+  .gallery__item--wide {
+    max-width: 338px;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -3331,6 +3414,18 @@ button,
 
   .features__item:last-child h3 {
     padding: 0 70px;
+  }
+
+  .gallery__item:first-child {
+    margin-right: 4px;
+  }
+
+  .gallery__item--first,
+  .gallery__item--second,
+  .gallery__item--third,
+  .gallery__item--wide {
+    max-width: 253px;
+    margin-right: 5px;
   }
 }
 
@@ -3468,14 +3563,16 @@ button,
 
   .title--training,
   .title--about,
-  .title--reviews {
+  .title--reviews,
+  .title--gallery {
     font-size: 22px;
     line-height: 22px;
   }
 
   .title--training::after,
   .title--about::after,
-  .title--reviews::after {
+  .title--reviews::after,
+  .title--gallery::after {
     font-size: 26px;
     line-height: 26px;
   }
@@ -3483,6 +3580,14 @@ button,
   .title--features::after {
     font-size: 26px;
     line-height: 26px;
+  }
+
+  .title--gallery::after {
+    top: -4px;
+  }
+
+  .slider-navigation__button--gallery {
+    width: 37px;
   }
 
   .tours__wrapper {
@@ -3672,6 +3777,60 @@ button,
 
   .features__br {
     display: block;
+  }
+
+  .gallery {
+    padding-top: 7px;
+  }
+
+  .gallery__title {
+    margin-bottom: 13px;
+  }
+
+  .gallery__intro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .gallery__intro p {
+    margin-bottom: 16px;
+    width: 100%;
+    font-size: 12px;
+    line-height: 18px;
+    padding-right: 20px;
+  }
+
+  .gallery__slider-navigation {
+    margin-top: 0;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+  }
+
+  .gallery__swiper {
+    margin: 0 15px;
+  }
+
+  .gallery__item:first-child {
+    margin-right: 2px;
+  }
+
+  .gallery__item--first,
+  .gallery__item--second,
+  .gallery__item--third,
+  .gallery__item--wide {
+    max-width: 159px;
+    margin-right: 2px;
+  }
+
+  .gallery__item {
+    max-height: 260px;
+  }
+
+  .gallery__item-wrapper {
+    gap: 3px;
   }
 }
 
