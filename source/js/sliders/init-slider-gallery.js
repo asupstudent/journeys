@@ -4,32 +4,12 @@ const buttonPrev = document.querySelector('[data-swiper-gallery="button-prev"]')
 
 const setSliderGallery = () => {
   return new window.Swiper(sliderGallery, {
+    slidesPerView: 'auto',
     navigation: {
       nextEl: buttonNext,
       prevEl: buttonPrev,
     },
-
-    breakpoints: {
-      1200: {
-        slidesPerView: 'auto',
-        spaceBetween: 5,
-      },
-
-      1024: {
-        slidesPerView: 'auto',
-        spaceBetween: 5,
-      },
-
-      768: {
-        slidesPerView: 'auto',
-        spaceBetween: 5,
-      },
-
-      350: {
-        slidesPerView: 'auto',
-        spaceBetween: 3,
-      },
-    },
+    loop: true,
   });
 };
 

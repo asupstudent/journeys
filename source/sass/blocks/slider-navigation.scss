@@ -42,4 +42,14 @@
   @include disabled {
     background-color: $color-nobel;
   }
+
+  &--gallery {
+    @include vp-1199 {
+      width: 34px;
+    }
+
+    @include vp-767 {
+      width: 37px;
+    }
+  }
 }

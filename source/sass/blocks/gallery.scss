@@ -1,5 +1,84 @@
-.gallery__wrapper {
-  margin: 0;
+.gallery {
+  padding-top: 23px;
+  padding-bottom: 3px;
+
+  @include vp-1199 {
+    padding-top: 18px;
+    padding-bottom: 0;
+  }
+
+  @include vp-767 {
+    padding-top: 7px;
+  }
+}
+
+.gallery__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery__title {
+  margin-bottom: 24px;
+
+  @include vp-1199 {
+    margin-bottom: 17px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 13px;
+  }
+}
+
+.gallery__intro {
+  display: flex;
+  justify-content: space-between;
+
+  @include vp-767 {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin: 0 0 45px;
+    max-width: 693px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+    @include vp-1199 {
+      margin-bottom: 21px;
+      max-width: 420px;
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 16px;
+      width: 100%;
+      font-size: 12px;
+      line-height: 18px;
+      padding-right: 20px;
+    }
+  }
+}
+
+.gallery__slider-navigation {
+  margin-top: 5px;
+
+  @include vp-1199 {
+    margin-top: 31px;
+  }
+
+  @include vp-767 {
+    margin-top: 0;
+    align-self: flex-end;
+  }
+}
+
+.gallery__swiper {
+  @include vp-767 {
+    margin: 0 15px;
+  }
 }
 
 .gallery__list {
@@ -9,7 +88,18 @@
 }
 
 .gallery__item {
-  min-height: 449px;
+  max-height: 450px;
+  margin-right: 5px;
+
+  &:first-child {
+    @include vp-1023 {
+      margin-right: 4px;
+    }
+
+    @include vp-767 {
+      margin-right: 2px;
+    }
+  }
 
   &--first {
     max-width: 275px;
@@ -27,6 +117,36 @@
     max-width: 298px;
     height: auto;
   }
+
+  &--first,
+  &--second,
+  &--third,
+  &--wide {
+    @include vp-1199 {
+      max-width: 338px;
+    }
+
+    @include vp-1023 {
+      max-width: 253px;
+      margin-right: 5px;
+    }
+
+    @include vp-767 {
+      max-width: 159px;
+      margin-right: 2px;
+    }
+  }
+
+  @include vp-767 {
+    max-height: 260px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: $color-navy-blue;
+  }
 }
 
 .gallery__item-wrapper {
@@ -34,9 +154,14 @@
   flex-direction: column;
   gap: 5px;
 
+  @include vp-767 {
+    gap: 3px;
+  }
+
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    background-color: $color-navy-blue;
   }
 }
