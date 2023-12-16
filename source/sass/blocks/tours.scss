@@ -3,14 +3,35 @@
 }
 
 .tours__wrapper {
-  padding: 100px 0;
+  padding: 123px 0 109px;
+  position: relative;
+  z-index: 3;
 
   @include vp-1199 {
-    padding: 45px 0;
+    padding: 68px 0 54px;
   }
 
   @include vp-767 {
     padding: 35px 0;
+  }
+}
+
+.tours__clouds-big {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 602px;
+  height: 1630px;
+
+  @include vp-1199 {
+    width: 602px;
+    height: 1364px;
+  }
+
+  @include vp-767 {
+    width: 171px;
+    height: 595px;
   }
 }
 
@@ -19,17 +40,21 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 0 53px;
+  margin: 0 0 50px;
 
   @include vp-1199 {
-    margin-bottom: 25px;
+    margin-bottom: 22px;
   }
 }
 
 .tours__slider-navigation {
   position: absolute;
-  top: 0;
+  top: -3px;
   right: 0;
+}
+
+.tours__swiper {
+  margin-bottom: 11px;
 }
 
 .tours__list {
@@ -62,6 +87,12 @@
     z-index: -1;
   }
 
+  &--no-gradient {
+    &::before {
+      background: $color-black-20;
+    }
+  }
+
   @include vp-1199 {
     min-width: 330px;
     max-width: 100%;
@@ -74,7 +105,7 @@
 
   h3 {
     position: relative;
-    margin: 0 0 31px;
+    margin: 0 0 30px;
     padding: 0 70px 0 0;
     color: $color-default-white;
     font-size: 24px;
@@ -121,7 +152,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: auto 0 15px;
+  margin: auto 0 16px;
   padding: 0;
   list-style: none;
   max-width: 100%;
@@ -134,19 +165,24 @@
 
 .tours__data-wrapper {
   display: flex;
-  gap: 14px;
+  gap: 15px;
   margin-left: auto;
 }
 
 .tours__point {
   display: flex;
   align-items: center;
-  padding: 6px 12px;
+  padding: 8px 13px 8px 12px;
   background-color: $color-navy-blue;
   gap: 6px;
 
   @include vp-349 {
     padding: 6px;
+  }
+
+  svg {
+    margin-left: 4px;
+    margin-right: 3px;
   }
 }
 
@@ -160,7 +196,7 @@
 .tours__description {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 
   dl,
   dt,
@@ -171,16 +207,24 @@
   }
 
   dt {
-    margin-bottom: 4px;
     font-size: 12px;
     line-height: 12px;
     font-weight: 300;
   }
 
   dd {
+    margin-top: 7px;
     font-size: 13px;
     line-height: 13px;
     font-weight: 700;
+  }
+
+  dl.tours__complexity {
+    margin-bottom: -2px;
+
+    dt {
+      margin-bottom: -3px;
+    }
   }
 }
 
@@ -197,8 +241,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     color: $color-elephant;
+
+    svg {
+      position: relative;
+      bottom: 1px;
+      left: 1px;
+    }
 
     @include hover-focus {
       color: $color-resolution-blue;
