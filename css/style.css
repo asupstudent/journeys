@@ -2644,9 +2644,8 @@ button,
   margin: 1px 0 14px;
 }
 
-.training_process {
+.training__process {
   padding-left: 120px;
-  margin-left: auto;
 }
 
 .training__br {
@@ -2665,10 +2664,8 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   margin: 0;
-  padding: 0 0 56px;
+  padding: 0;
   list-style: none;
 }
 
@@ -2681,7 +2678,30 @@ button,
   -ms-flex-align: start;
   align-items: flex-start;
   position: relative;
-  padding: 4px 10px 22px;
+  padding: 4px 10px 24px;
+}
+
+.process__item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #0266c1;
+  left: 10px;
+  bottom: 8px;
+}
+
+.process__item::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(2, 102, 193, 0.1);
+  left: 10px;
+  bottom: 14px;
 }
 
 .process__item:last-child {
@@ -2702,30 +2722,6 @@ button,
   line-height: 24px;
   max-width: 198px;
   margin: 0;
-}
-
-.process__item::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background-color: #0266c1;
-  left: 10px;
-  bottom: 6px;
-}
-
-.process__item::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: #0266c1;
-  left: 10px;
-  bottom: 12px;
-  opacity: 0.2;
 }
 
 .about {
@@ -3255,24 +3251,158 @@ button,
     padding-right: 150px;
   }
 
+  .training {
+    padding-bottom: 23px;
+  }
+
+  .training__wrapper {
+    padding-top: 63px;
+  }
+
   .training__wrapper p {
-    margin: 0 0 25px;
+    margin: 0 0 29px;
     max-width: 560px;
+  }
+
+  .training__title {
+    margin-bottom: 21px;
   }
 
   .training__title::after {
     top: -13px;
   }
 
+  .training__intro {
+    margin-bottom: 30px;
+  }
+
   .training__swiper {
     max-width: 768px;
-    margin: 0 auto 25px;
+    margin: 0 auto 27px;
+  }
+
+  .training__process {
+    max-width: 1199px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 45px;
   }
 
   .process h3 {
     font-size: 18px;
     line-height: 18px;
-    margin-bottom: 44px;
+    margin-bottom: 36px;
+  }
+
+  .process__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 0 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 65px 0;
+    -ms-grid-rows: auto 65px auto;
+    grid-template-areas: "map boots" "mountains trees";
+  }
+
+  .process__item::before {
+    bottom: 0;
+  }
+
+  .process__item::after {
+    bottom: 7px;
+  }
+
+  .process__item--map::after {
+    left: 20px;
+  }
+
+  .process__item--boots::before {
+    left: 15px;
+  }
+
+  .process__item--boots::after {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    left: -6px;
+    bottom: -20px;
+    width: 56px;
+  }
+
+  .process__item--mountains {
+    padding-top: 2px;
+  }
+
+  .process__item--mountains::before {
+    top: -25px;
+    bottom: auto;
+  }
+
+  .process__item--mountains::after {
+    top: -18px;
+    left: 20px;
+    bottom: auto;
+  }
+
+  .process__item--trees {
+    padding-top: 2px;
+  }
+
+  .process__item--trees::before {
+    top: -25px;
+    left: 15px;
+    bottom: auto;
+  }
+
+  .process__item--trees::after {
+    display: none;
+  }
+
+  .process__item::after {
+    height: 1px;
+  }
+
+  .process__item--map {
+    grid-area: map;
+  }
+
+  .process__item--boots {
+    grid-area: boots;
+    padding-left: 14px;
+  }
+
+  .process__item--mountains {
+    grid-area: mountains;
+  }
+
+  .process__item--trees {
+    grid-area: trees;
+    padding-left: 14px;
+  }
+
+  .process__item--map {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .process__item--boots {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+
+  .process__item--mountains {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+
+  .process__item--trees {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+
+  .process__item p {
+    font-size: 14px;
+    line-height: 22px;
   }
 
   .about__title {
@@ -3707,6 +3837,10 @@ button,
     max-width: 100%;
   }
 
+  .training__process {
+    padding: 0 15px;
+  }
+
   .training__br {
     display: block;
   }
@@ -3715,6 +3849,17 @@ button,
     font-size: 16px;
     line-height: 16px;
     margin: 0 0 25px;
+  }
+
+  .process__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 25px;
   }
 
   .process__item::before {
