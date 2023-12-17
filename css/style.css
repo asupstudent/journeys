@@ -2261,7 +2261,7 @@ button,
 }
 
 .tours__wrapper {
-  padding: 123px 0 109px;
+  padding: 123px 0 99px;
   position: relative;
   z-index: 3;
 }
@@ -2296,7 +2296,7 @@ button,
 }
 
 .tours__swiper {
-  margin-bottom: 11px;
+  margin-bottom: 1px;
 }
 
 .tours__list {
@@ -2489,6 +2489,7 @@ button,
   -ms-flex-align: center;
   align-items: center;
   gap: 10px;
+  padding: 10px;
   color: #2d383f;
 }
 
@@ -3219,7 +3220,7 @@ button,
   }
 
   .tours__wrapper {
-    padding: 68px 0 54px;
+    padding: 68px 0 44px;
   }
 
   .tours__clouds-big {
@@ -3604,6 +3605,10 @@ button,
     line-height: 22px;
   }
 
+  .title::after {
+    top: -29px;
+  }
+
   .title--training,
   .title--about,
   .title--reviews,
@@ -3634,17 +3639,40 @@ button,
   }
 
   .tours__wrapper {
-    padding: 35px 0;
+    padding: 55px 0 20px;
   }
 
   .tours__clouds-big {
+    top: 110px;
     width: 171px;
     height: 595px;
+  }
+
+  .tours__header {
+    margin-bottom: 23px;
+  }
+
+  .tours__slider-navigation {
+    top: -15px;
+  }
+
+  .tours__swiper {
+    margin-bottom: 0;
   }
 
   .tours__item {
     min-width: 100%;
     max-width: 100%;
+  }
+
+  .tours__link a svg {
+    bottom: 0;
+  }
+
+  .tours__link {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.56px;
   }
 
   .training__wrapper p {
