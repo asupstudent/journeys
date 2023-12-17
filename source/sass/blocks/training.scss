@@ -101,6 +101,10 @@
     line-height: 16px;
     margin: 0;
     max-width: 255px;
+
+    @include vp-767 {
+      max-width: 100%;
+    }
   }
 
   @include vp-767 {
@@ -135,4 +139,12 @@
 .training_process {
   padding-left: 120px;
   margin-left: auto;
+}
+
+.training__br {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+  }
 }
