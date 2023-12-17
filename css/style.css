@@ -2649,6 +2649,10 @@ button,
   margin-left: auto;
 }
 
+.training__br {
+  display: none;
+}
+
 .process h3 {
   font-size: 21px;
   font-weight: 700;
@@ -3695,8 +3699,16 @@ button,
     max-width: 320px;
   }
 
+  .training__item p {
+    max-width: 100%;
+  }
+
   .training__item {
     max-width: 100%;
+  }
+
+  .training__br {
+    display: block;
   }
 
   .process h3 {
