@@ -25,6 +25,10 @@
   @include vp-767 {
     font-size: 22px;
     line-height: 22px;
+
+    &::after {
+      top: -29px;
+    }
   }
 
   @include vp-349 {

@@ -4,7 +4,6 @@ const buttonPrev = document.querySelector('[data-swiper-tours="button-prev"]');
 
 const setSliderTours = () => {
   return new window.Swiper(sliderTours, {
-    initialSlide: 3,
     navigation: {
       nextEl: buttonNext,
       prevEl: buttonPrev,
@@ -12,6 +11,7 @@ const setSliderTours = () => {
 
     breakpoints: {
       1200: {
+        initialSlide: 6,
         slidesPerView: 3,
         spaceBetween: 30,
       },
@@ -19,13 +19,13 @@ const setSliderTours = () => {
       768: {
         slidesPerView: 2,
         spaceBetween: 18,
-        initialSlide: 0,
-        loop: true,
+        initialSlide: 3,
       },
 
       350: {
         slidesPerView: 1,
         spaceBetween: 18,
+        initialSlide: 3,
       },
     },
   });

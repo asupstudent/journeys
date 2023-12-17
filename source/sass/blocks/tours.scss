@@ -3,16 +3,16 @@
 }
 
 .tours__wrapper {
-  padding: 123px 0 109px;
+  padding: 123px 0 99px;
   position: relative;
   z-index: 3;
 
   @include vp-1199 {
-    padding: 68px 0 54px;
+    padding: 68px 0 44px;
   }
 
   @include vp-767 {
-    padding: 35px 0;
+    padding: 55px 0 20px;
   }
 }
 
@@ -30,6 +30,7 @@
   }
 
   @include vp-767 {
+    top: 110px;
     width: 171px;
     height: 595px;
   }
@@ -45,16 +46,28 @@
   @include vp-1199 {
     margin-bottom: 22px;
   }
+
+  @include vp-767 {
+    margin-bottom: 23px;
+  }
 }
 
 .tours__slider-navigation {
   position: absolute;
   top: -3px;
   right: 0;
+
+  @include vp-767 {
+    top: -15px;
+  }
 }
 
 .tours__swiper {
-  margin-bottom: 11px;
+  margin-bottom: 1px;
+
+  @include vp-767 {
+    margin-bottom: 0;
+  }
 }
 
 .tours__list {
@@ -242,12 +255,17 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    padding: 10px;
     color: $color-elephant;
 
     svg {
       position: relative;
       bottom: 1px;
       left: 1px;
+
+      @include vp-767 {
+        bottom: 0;
+      }
     }
 
     @include hover-focus {
@@ -273,5 +291,11 @@
         display: none;
       }
     }
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.56px;
   }
 }
