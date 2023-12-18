@@ -3526,7 +3526,7 @@ button,
   }
 
   .features__wrapper {
-    padding: 45px 0;
+    padding: 43px 0 45px;
   }
 
   .features__clouds-left {
@@ -4028,6 +4028,7 @@ button,
   .about__wrapper {
     max-width: 100%;
     padding-top: 7px;
+    padding-bottom: 1px;
   }
 
   .about__text {
@@ -4048,7 +4049,7 @@ button,
   }
 
   .reviews__wrapper {
-    padding: 31px 0;
+    padding: 30px 0 15px;
   }
 
   .reviews__header {
@@ -4096,7 +4097,7 @@ button,
   }
 
   .features__wrapper {
-    padding: 40px 0;
+    padding: 23px 0 40px;
   }
 
   .features__clouds-left {
