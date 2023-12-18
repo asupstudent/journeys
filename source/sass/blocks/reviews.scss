@@ -1,16 +1,17 @@
 .reviews {
   position: relative;
+  z-index: 3;
 }
 
 .reviews__wrapper {
-  padding: 42px 0 0;
+  padding: 40px 0 0;
 
   @include vp-1199 {
     padding: 113px 0;
   }
 
   @include vp-1023 {
-    padding: 46px 0;
+    padding: 44px 0 37px;
   }
 
   @include vp-767 {

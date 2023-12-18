@@ -15,7 +15,7 @@
     @include vp-767 {
       font-size: 16px;
       line-height: 16px;
-      margin: 0 0 25px;
+      margin: 0 0 19px;
     }
   }
 }
@@ -25,6 +25,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  overflow-x: hidden;
 
   @include vp-1199 {
     display: grid;
@@ -38,7 +39,7 @@
   @include vp-767 {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 0;
   }
 }
 
@@ -69,7 +70,7 @@
       width: 13px;
       height: 13px;
       left: 0;
-      bottom: 10px;
+      bottom: 32px;
     }
   }
 
@@ -78,7 +79,7 @@
     position: absolute;
     display: block;
     width: 100%;
-    height: 2px;
+    height: 1px;
     background-color: $color-navy-blue-10;
     left: 10px;
     bottom: 14px;
@@ -89,11 +90,11 @@
 
     @include vp-767 {
       display: block;
-      width: 1px;
-      height: 100%;
-      background-color: $color-navy-blue-20;
-      left: 6px;
-      bottom: -41px;
+      background-color: $color-navy-blue-10;
+      left: 21px;
+      bottom: 7px;
+      width: 56px;
+      transform: rotate(90deg);
     }
   }
 
@@ -106,6 +107,10 @@
       @include vp-1199 {
         left: 20px;
       }
+
+      @include vp-767 {
+        left: -21px;
+      }
     }
   }
 
@@ -113,6 +118,10 @@
     &::before {
       @include vp-1199 {
         left: 15px;
+      }
+
+      @include vp-767 {
+        left: 0;
       }
     }
 
@@ -122,6 +131,11 @@
         left: -6px;
         bottom: -20px;
         width: 56px;
+      }
+
+      @include vp-767 {
+        left: -21px;
+        bottom: 7px;
       }
     }
   }
@@ -136,6 +150,10 @@
         top: -25px;
         bottom: auto;
       }
+
+      @include vp-767 {
+        top: 17px;
+      }
     }
 
     &::after {
@@ -143,6 +161,10 @@
         top: -18px;
         left: 20px;
         bottom: auto;
+      }
+
+      @include vp-767 {
+        display: none;
       }
     }
   }
@@ -158,11 +180,22 @@
         left: 15px;
         bottom: auto;
       }
+
+      @include vp-767 {
+        left: 0;
+        top: 17px;
+      }
     }
 
     &::after {
       @include vp-1199 {
         display: none;
+      }
+
+      @include vp-767 {
+        display: block;
+        left: -21px;
+        bottom: 7px;
       }
     }
   }
@@ -191,9 +224,20 @@
     }
   }
 
+  @include vp-767 {
+    padding: 4px 10px 21px 29px;
+    gap: 12px;
+  }
+
   svg {
     flex-shrink: 0;
     margin-top: 2px;
+
+    @include vp-767 {
+      margin-top: 6px;
+      width: 22px;
+      height: 22px;
+    }
   }
 
   p {
@@ -206,6 +250,11 @@
     @include vp-1199 {
       font-size: 14px;
       line-height: 22px;
+    }
+
+    @include vp-767 {
+      font-size: 12px;
+      line-height: 18px;
     }
   }
 }

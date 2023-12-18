@@ -8,16 +8,15 @@ const setSliderReviews = () => {
       nextEl: buttonNext,
       prevEl: buttonPrev,
     },
+    loop: true,
 
     breakpoints: {
       1200: {
-        initialSlide: 1,
         slidesPerView: 'auto',
         spaceBetween: 120,
       },
 
       1024: {
-        initialSlide: 1,
         slidesPerView: 'auto',
         spaceBetween: 30,
       },
