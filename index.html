@@ -1264,12 +1264,31 @@
           </div>
         </section>
         <section class="feedback" id="feedback" data-test="form">
-          <div class="container">
-            <div class="feedback__wrapper">
-              <h2 class="feedback__title">Остались вопросы?</h2>
-              <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
-            </div>
+          <h2 class="feedback__title">Остались вопросы?</h2>
+          <p>Заполните форму и наш оператор свяжется с&nbsp;вами для консультации.</p>
+          <div class="form" data-form-validate="data-form-validate" data-callback="base">
+            <form class="form__wrapper" action="https://echo.htmlacademy.ru" method="post" data-form-feedback="data-form-feedback">
+              <div class="form__input" data-validate-type="phone" data-required="data-required">
+                <label aria-label="Введите ваш номер телефона.">
+                  <input type="tel" name="tel" placeholder="Телефон" autocomplete="off" required>
+                </label>
+              </div>
+              <div class="form__input" data-validate-type="email" data-required="data-required">
+                <label aria-label="Введите вашу электронную почту.">
+                  <input type="email" name="email" placeholder="Email" autocomplete="off" required>
+                </label>
+              </div>
+              <button class="form__btn btn" type="submit">Отправить</button>
+            </form>
           </div>
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" width="350" height="552" srcset="./img/content/feedback/bg-feedback-mobile@1x.webp 1x, ./img/content/feedback/bg-feedback-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1199px)" width="768" height="680" srcset="./img/content/feedback/bg-feedback-tablet-768@1x.webp 1x, ./img/content/feedback/bg-feedback-tablet-768@2x.webp 2x">
+            <source type="image/webp" width="1440" height="760" srcset="./img/content/feedback/bg-feedback-desktop@1x.webp 1x, ./img/content/feedback/bg-feedback-desktop@2x.webp 2x">
+            <source type="image/png" media="(max-width: 767px)" width="350" height="552" srcset="./img/content/feedback/bg-feedback-mobile@1x.png 1x, ./img/content/feedback/bg-feedback-mobile@2x.png 2x">
+            <source type="image/png" media="(max-width: 1199px)" width="768" height="680" srcset="./img/content/feedback/bg-feedback-tablet-768@1x.png 1x, ./img/content/feedback/bg-feedback-tablet-768@2x.png 2x">
+            <img src="./img/content/feedback/bg-feedback-desktop@1x.png" width="1440" height="760" srcset="./img/content/feedback/bg-feedback-desktop@2x.png 2x" alt="">
+          </picture>
         </section>
       </main>
       <footer data-test="footer">
