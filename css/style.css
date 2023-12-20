@@ -3295,6 +3295,15 @@ button,
   outline: 1px solid #ff121f;
 }
 
+.contacts__wrapper {
+  display: -ms-grid;
+  display: grid;
+  gap: 115px;
+  -ms-grid-columns: 500px auto;
+  grid-template-columns: 500px auto;
+  padding: 65px 0 95px;
+}
+
 @media (max-width: 1199px) {
   .container {
     padding: 0 45px;
@@ -3463,7 +3472,7 @@ button,
   .title--about,
   .title--reviews,
   .title--gallery,
-  .title--footer {
+  .title--contacts {
     font-size: 25px;
     line-height: 25px;
   }
@@ -3472,7 +3481,7 @@ button,
   .title--about::after,
   .title--reviews::after,
   .title--gallery::after,
-  .title--footer::after {
+  .title--contacts::after {
     font-size: 40px;
     line-height: 40px;
   }
@@ -4066,7 +4075,7 @@ button,
   .title--about,
   .title--reviews,
   .title--gallery,
-  .title--footer {
+  .title--contacts {
     font-size: 22px;
     line-height: 22px;
   }
@@ -4075,7 +4084,7 @@ button,
   .title--about::after,
   .title--reviews::after,
   .title--gallery::after,
-  .title--footer::after {
+  .title--contacts::after {
     font-size: 26px;
     line-height: 26px;
   }
