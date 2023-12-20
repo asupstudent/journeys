@@ -39,7 +39,8 @@
   &--training,
   &--about,
   &--reviews,
-  &--gallery {
+  &--gallery,
+  &--footer {
     @include vp-1199 {
       font-size: 25px;
       line-height: 25px;
