@@ -1291,8 +1291,108 @@
           </picture>
         </section>
       </main>
-      <footer data-test="footer">
-
+      <footer class="footer" data-test="footer">
+        <div class="footer__container">
+          <div class="container">
+            <h2 class="footer__title title title--footer" data-text="Контакты">Контакты</h2>
+            <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
+            <div class="footer__contacts contacts">
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <svg width="26" height="26" role="img">
+                    <use href="img/sprite.svg#phone"></use>
+                  </svg>
+                  <h3 class="contacts__title">Телефон</h3>
+                  <a class="contacts__description" href="tel:7-983-745-45-45">+7 983 745-45-45</a>
+                </li>
+                <li class="contacts__item">
+                  <svg width="26" height="26" role="img">
+                    <use href="img/sprite.svg#mail"></use>
+                  </svg>
+                  <h3 class="contacts__title">Email</h3>
+                  <a class="contacts__description" href="mailto:info@lifetour.com">info@lifetour.com</a>
+                </li>
+                <li class="contacts__item">
+                  <svg width="26" height="26" role="img">
+                    <use href="img/sprite.svg#pin-stroked"></use>
+                  </svg>
+                  <h3 class="contacts__title">Адрес</h3>
+                  <address class="contacts__description">г. Москва, пр-т Мира, д. 14, офис 101</address>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__map">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" width="350" height="320" srcset="./img/content/contacts/map-mobile@1x.webp 1x, ./img/content/contacts/map-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)" width="768" height="340" srcset="./img/content/contacts/map-tablet-768@1x.webp 1x, ./img/content/contacts/map-tablet-768@2x.webp 2x">
+                <source type="image/webp" width="585" height="324" srcset="./img/content/contacts/map-desktop@1x.webp 1x, ./img/content/contacts/map-desktop@2x.webp 2x">
+                <source type="image/png" media="(max-width: 767px)" width="350" height="320" srcset="./img/content/contacts/map-mobile@1x.png 1x, ./img/content/contacts/map-mobile@2x.png 2x">
+                <source type="image/png" media="(max-width: 1199px)" width="768" height="340" srcset="./img/content/contacts/map-tablet-768@1x.png 1x, ./img/content/contacts/map-tablet-768@2x.png 2x">
+                <img src="./img/content/contacts/map-desktop@1x.png" width="585" height="324" srcset="./img/content/contacts/map-desktop@2x.png 2x" alt="Где мы находимся.">
+              </picture>
+            </div>
+            <div class="footer__add-nav add-nav">
+              <a class="add-nav__logo logo logo--add-nav" href="#">
+                <svg width="142" height="42">
+                  <use href="img/sprite.svg#logo"></use>
+                </svg>
+                <span class="visually-hidden">Логотип Lifetour</span>
+              </a>
+              <ul class="add-nav__list">
+                <li>
+                  <a class="add-nav__link" href="#tours">Туры</a>
+                </li>
+                <li>
+                  <a class="add-nav__link" href="#training">Обучение</a>
+                </li>
+                <li>
+                  <a class="add-nav__link" href="#about">О нас</a>
+                </li>
+                <li>
+                  <a class="add-nav__link" href="#reviews">Отзывы</a>
+                </li>
+                <li>
+                  <a class="add-nav__link" href="#gallery">Фотографии</a>
+                </li>
+                <li>
+                  <a class="add-nav__link" href="#contacts">Контакты</a>
+                </li>
+              </ul>
+              <div class="add-nav__phone">
+                <a class="add-nav__phone-link" href="tel:+788007253232">8 800 725-32-32</a>
+              </div>
+            </div>
+            <div class="footer__social social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link social__link--vk" href="#">
+                    <svg width="30" height="30">
+                      <use href="img/sprite.svg#vk"></use>
+                    </svg>
+                    <span class="visually-hidden">Вконтакте.</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--ok" href="#">
+                    <svg width="30" height="30">
+                      <use href="img/sprite.svg#ok"></use>
+                    </svg>
+                    <span class="visually-hidden">Одноклассники.</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--reddit" href="#">
+                    <svg width="30" height="30">
+                      <use href="img/sprite.svg#reddit"></use>
+                    </svg>
+                    <span class="visually-hidden">Reddit.</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <a class="footer__policy" href="#">Политика конфиденциальности</a>
+          </div>
+        </div>
       </footer>
     </div>
     <script src="js/vendor.min.js" defer></script>

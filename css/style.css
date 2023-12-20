@@ -3462,7 +3462,8 @@ button,
   .title--training,
   .title--about,
   .title--reviews,
-  .title--gallery {
+  .title--gallery,
+  .title--footer {
     font-size: 25px;
     line-height: 25px;
   }
@@ -3470,7 +3471,8 @@ button,
   .title--training::after,
   .title--about::after,
   .title--reviews::after,
-  .title--gallery::after {
+  .title--gallery::after,
+  .title--footer::after {
     font-size: 40px;
     line-height: 40px;
   }
@@ -4063,7 +4065,8 @@ button,
   .title--training,
   .title--about,
   .title--reviews,
-  .title--gallery {
+  .title--gallery,
+  .title--footer {
     font-size: 22px;
     line-height: 22px;
   }
@@ -4071,7 +4074,8 @@ button,
   .title--training::after,
   .title--about::after,
   .title--reviews::after,
-  .title--gallery::after {
+  .title--gallery::after,
+  .title--footer::after {
     font-size: 26px;
     line-height: 26px;
   }
