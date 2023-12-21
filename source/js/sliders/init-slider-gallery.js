@@ -10,8 +10,8 @@ const setSliderGallery = () => {
       prevEl: buttonPrev,
     },
     loop: true,
-    // slidesPerGroup: 2,
-    // loopAddBlankSlides: true,
+    slidesPerGroup: 2,
+    loopAddBlankSlides: true,
   });
 };
 

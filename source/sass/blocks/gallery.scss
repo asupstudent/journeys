@@ -137,6 +137,18 @@
     }
   }
 
+  &--first,
+  &--second,
+  &--third {
+    img {
+      max-height: 450px;
+
+      @include vp-767 {
+        max-height: 260px;
+      }
+    }
+  }
+
   @include vp-767 {
     max-height: 260px;
   }
