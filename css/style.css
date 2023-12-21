@@ -3942,6 +3942,14 @@ button,
     max-width: 338px;
   }
 
+  .gallery__image-wrapper--top img {
+    max-height: 180px;
+  }
+
+  .gallery__image-wrapper--bottom img {
+    max-height: 265px;
+  }
+
   .feedback {
     min-height: 680px;
   }
@@ -4634,6 +4642,14 @@ button,
 
   .gallery__item-wrapper {
     gap: 3px;
+  }
+
+  .gallery__image-wrapper--top img {
+    max-height: 100px;
+  }
+
+  .gallery__image-wrapper--bottom img {
+    max-height: 157px;
   }
 
   .feedback {
