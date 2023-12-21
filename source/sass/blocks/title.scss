@@ -71,7 +71,8 @@
     }
   }
 
-  &--gallery {
+  &--gallery,
+  &--contacts {
     @include vp-1199 {
       &::after {
         top: -13px;
