@@ -165,3 +165,33 @@
     background-color: $color-navy-blue;
   }
 }
+
+.gallery__image-wrapper {
+  @include vp-1199 {
+    &--top {
+      img {
+        max-height: 180px;
+      }
+    }
+
+    &--bottom {
+      img {
+        max-height: 265px;
+      }
+    }
+  }
+
+  @include vp-767 {
+    &--top {
+      img {
+        max-height: 100px;
+      }
+    }
+
+    &--bottom {
+      img {
+        max-height: 157px;
+      }
+    }
+  }
+}
