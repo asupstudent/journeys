@@ -16,20 +16,50 @@
   }
 
   &--footer {
+    border: 1px solid $color-elephant-20;
     width: 30px;
     height: 30px;
+
+    @include vp-1199 {
+      border: 1px solid $color-elephant-30;
+      width: 32px;
+    }
   }
 
   @include hover-focus {
     border: 1px solid $color-elephant;
   }
 
-  @include active {
-    border: none;
-    background-color: $color-navy-blue;
+  &--vk {
+    @include active {
+      border: none;
+      background-color: $color-navy-blue;
 
-    svg {
-      color: $color-default-white;
+      svg {
+        color: $color-default-white;
+      }
+    }
+  }
+
+  &--ok {
+    @include active {
+      border: none;
+      background-color: $west-side;
+
+      svg {
+        color: $color-default-white;
+      }
+    }
+  }
+
+  &--reddit {
+    @include active {
+      border: none;
+      background-color: $international-orange;
+
+      svg {
+        color: $color-default-white;
+      }
     }
   }
 
