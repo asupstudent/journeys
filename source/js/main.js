@@ -1,5 +1,5 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-import {toggleBurgerMenu} from './burger/init-menu';
+import {initBurgerMenu} from './burger/init-menu';
 import {initSliderHero} from './sliders/init-slider-hero';
 import {initSliderTours} from './sliders/init-slider-tours';
 import {initSliderTraining} from './sliders/init-slider-training';
@@ -11,7 +11,7 @@ import {Form} from './modules/form-validate/form';
 window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
   window.addEventListener('load', () => {
-    toggleBurgerMenu();
+    initBurgerMenu();
     initSliderHero();
     initSliderTours();
     initSliderTraining();

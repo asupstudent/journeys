@@ -31,19 +31,6 @@ body {
   min-width: $vp-320;
 }
 
-body.overlay {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: "";
-    background-color: $color-elephant-60;
-    height: 100%;
-    width: 100%;
-    z-index: 2;
-  }
-}
-
 a {
   color: $color-default-black;
   text-decoration: none;
