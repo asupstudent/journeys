@@ -3,14 +3,14 @@ const buttonNext = document.querySelector('[data-swiper-gallery="button-next"]')
 const buttonPrev = document.querySelector('[data-swiper-gallery="button-prev"]');
 
 const setSliderGallery = () => new window.Swiper(sliderGallery, {
-  slidesPerView: 'auto',
   navigation: {
     nextEl: buttonNext,
     prevEl: buttonPrev,
   },
-  loop: true,
+  slidesPerView: 'auto',
   slidesPerGroup: 2,
   loopAddBlankSlides: true,
+  loop: true,
 });
 
 const initSliderGallery = () => {

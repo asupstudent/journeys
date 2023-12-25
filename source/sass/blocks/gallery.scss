@@ -95,6 +95,20 @@
     max-width: 275px;
   }
 
+  &--wide {
+    max-width: 298px;
+    height: auto;
+
+    @include vp-1199 {
+      max-width: 253px;
+    }
+
+    @include vp-767 {
+      max-width: 159px;
+      margin-right: 2px;
+    }
+  }
+
   &--second {
     max-width: 272px;
   }
@@ -103,44 +117,16 @@
     max-width: 276px;
   }
 
-  &--wide {
-    max-width: 298px;
-    height: auto;
-
-    @include vp-1023 {
-      margin-right: 5px;
-    }
-
-    @include vp-767 {
-      margin-right: 2px;
-    }
-  }
-
-  &--first,
-  &--second,
-  &--third,
-  &--wide {
-    @include vp-1199 {
-      max-width: 338px;
-    }
-
-    @include vp-1023 {
-      max-width: 253px;
-    }
-
-    @include vp-767 {
-      max-width: 159px;
-    }
-  }
-
   &--first,
   &--second,
   &--third {
-    @include vp-1023 {
+    @include vp-1199 {
+      max-width: 253px;
       margin-right: 4px;
     }
 
     @include vp-767 {
+      max-width: 159px;
       margin-right: 2px;
     }
 
