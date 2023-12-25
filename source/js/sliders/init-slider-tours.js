@@ -11,21 +11,21 @@ const setSliderTours = () => {
 
     breakpoints: {
       1200: {
-        initialSlide: 6,
         slidesPerView: 3,
+        initialSlide: 1,
         spaceBetween: 30,
       },
 
       768: {
         slidesPerView: 2,
+        initialSlide: 1,
         spaceBetween: 18,
-        initialSlide: 3,
       },
 
       350: {
         slidesPerView: 1,
+        initialSlide: 1,
         spaceBetween: 18,
-        initialSlide: 3,
       },
     },
   });
