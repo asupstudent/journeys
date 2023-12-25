@@ -3621,7 +3621,7 @@ button,
   }
 
   .nav--is-opened .nav__burger-button {
-    margin: 0 100px 0 15px;
+    margin: 0 115px 0 0;
   }
 
   .nav__logo {
