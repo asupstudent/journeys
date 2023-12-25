@@ -9,8 +9,7 @@
   background-color: $color-elephant-60;
   visibility: hidden;
   opacity: 0;
-  transition: opacity $trans-default,
-    visibility $trans-default;
+  transition: opacity $trans-default, visibility $trans-default;
   pointer-events: none;
   -ms-overflow-style: none;
   scrollbar-width: none;

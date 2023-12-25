@@ -44,23 +44,23 @@ const closeBurgerMenu = () => {
   window.focusLock.unlock();
 };
 
-const closeBurgerLinksClickAdd = () => {
+function closeBurgerLinksClickAdd() {
   navLink.forEach((link) => {
     link.addEventListener('click', closeBurgerMenu);
   });
-};
+}
 
-const closeBurgerLinksClickRemove = () => {
+function closeBurgerLinksClickRemove() {
   navLink.forEach((link) => {
     link.removeEventListener('click', openBurgerMenu);
   });
-};
+}
 
-const documentClickHandler = (event) => {
+function documentClickHandler(event) {
   if (!event.target.closest('.nav--is-opened')) {
     closeBurgerMenu();
   }
-};
+}
 
 const buttonClick = () => {
   if (mainNav.classList.contains('nav--is-opened')) {
@@ -72,7 +72,7 @@ const buttonClick = () => {
 };
 
 const showMenuToResize = () => {
-  let width = document.body.clientWidth;
+  const width = document.body.clientWidth;
 
   if (width > 1199) {
     if (mainNav.classList.contains('nav--is-opened')) {

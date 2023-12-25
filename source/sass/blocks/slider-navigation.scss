@@ -11,7 +11,7 @@
   border: none;
   cursor: pointer;
 
-  & svg {
+  svg {
     color: $color-default-white;
   }
 
@@ -19,7 +19,7 @@
     border: 1px solid $color-elephant;
     background-color: $color-default-white;
 
-    & svg {
+    svg {
       color: $color-elephant;
     }
   }
@@ -32,7 +32,7 @@
     background-color: $color-resolution-blue;
     border: none;
 
-    & svg {
+    svg {
       color: $color-default-white;
     }
   }

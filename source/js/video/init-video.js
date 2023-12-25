@@ -1,5 +1,5 @@
 function findVideos() {
-  let videos = document.querySelectorAll('.hero__video');
+  const videos = document.querySelectorAll('.hero__video');
 
   for (let i = 0; i < videos.length; i++) {
     setupVideo(videos[i]);
@@ -7,11 +7,11 @@ function findVideos() {
 }
 
 function setupVideo(video) {
-  let button = video.querySelector('.hero__video-button');
-  let poster = video.querySelector('img');
+  const button = video.querySelector('.hero__video-button');
+  const poster = video.querySelector('img');
 
   button.addEventListener('click', () => {
-    let iframe = createIframe();
+    const iframe = createIframe();
     poster.remove();
     button.remove();
     video.appendChild(iframe);
@@ -21,7 +21,7 @@ function setupVideo(video) {
 }
 
 function createIframe() {
-  let iframe = document.createElement('iframe');
+  const iframe = document.createElement('iframe');
 
   iframe.setAttribute('src', 'https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1');
   iframe.setAttribute('title', 'Бесплатные интерактивные онлайн-курсы');

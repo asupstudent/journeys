@@ -81,7 +81,7 @@
   position: relative;
   left: 0;
   padding: 0;
-  margin: 0 0 50px 0;
+  margin: 0 0 50px;
   list-style: none;
 
   @include vp-1199 {
@@ -110,7 +110,7 @@
   @include vp-1199 {
     flex-basis: 50%;
     max-width: 452px;
-    padding: 29px 20px 29px;
+    padding: 29px 20px;
 
     &:last-child {
       max-width: 380px;
@@ -119,7 +119,7 @@
 
   @include vp-1023 {
     max-width: 324px;
-    padding: 29px 19px 29px;
+    padding: 29px 19px;
 
     &:last-child {
       min-width: 380px;
