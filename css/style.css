@@ -2156,6 +2156,7 @@ button,
 .hero__audio iframe {
   width: 340px;
   height: 220px;
+  border: none;
 }
 
 .swiper .hero__swiper-pagination {
