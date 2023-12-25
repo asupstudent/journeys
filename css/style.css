@@ -1536,12 +1536,6 @@ button,
   display: none;
 }
 
-.no-transition {
-  /* stylelint-disable-next-line */
-  -webkit-transition: none !important;
-  transition: none !important;
-}
-
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
@@ -2638,6 +2632,7 @@ button,
   -ms-flex-negative: 0;
   flex-shrink: 0;
   margin: 0 0 15px;
+  background-color: #0266c1;
 }
 
 .training__image img {
@@ -2767,6 +2762,7 @@ button,
   z-index: -1;
   left: 0;
   top: 56px;
+  background-color: #0266c1;
 }
 
 .about__wrapper {
@@ -2862,7 +2858,7 @@ button,
 .review__avatar {
   min-width: 258px;
   max-height: 253px;
-  background-color: #1c3374;
+  background-color: #0266c1;
 }
 
 .review__avatar img {
@@ -3132,7 +3128,7 @@ button,
   -o-object-fit: cover;
   object-fit: cover;
   z-index: -1;
-  background-color: #2d383f;
+  background-color: #0266c1;
 }
 
 .feedback h2 {
@@ -3328,7 +3324,7 @@ button,
   gap: 133px;
   -ms-grid-columns: 482px auto;
   grid-template-columns: 482px auto;
-  padding: 88px 0 94px;
+  padding: 88px 0 93px;
 }
 
 .contacts__title {
@@ -3353,7 +3349,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 35px;
+  gap: 34px;
 }
 
 .contacts__item {
@@ -3365,8 +3361,8 @@ button,
   row-gap: 8px;
   -ms-grid-columns: 26px 1fr;
   grid-template-columns: 26px 1fr;
-  -ms-grid-rows: 18px 24px;
-  grid-template-rows: 18px 24px;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
 }
 
 .contacts__item svg {
@@ -3411,7 +3407,7 @@ button,
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  background-color: #2d383f;
+  background-color: #0266c1;
 }
 
 .contacts__br {
@@ -4205,7 +4201,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 39px;
+    gap: 40px;
   }
 
   .contacts__title {
@@ -4225,6 +4221,8 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 40px;
   }
 
@@ -4232,7 +4230,7 @@ button,
     -webkit-column-gap: 8px;
     -moz-column-gap: 8px;
     column-gap: 8px;
-    row-gap: 2px;
+    row-gap: 4px;
   }
 
   .contacts__item svg {
@@ -4929,7 +4927,7 @@ button,
   .contacts__wrapper {
     padding-top: 47px;
     padding-bottom: 39px;
-    gap: 47px;
+    gap: 30px;
   }
 
   .contacts__title {
@@ -4951,14 +4949,14 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 27px;
+    gap: 30px;
   }
 
   .contacts__item {
     -webkit-column-gap: 6px;
     -moz-column-gap: 6px;
     column-gap: 6px;
-    row-gap: 3px;
+    row-gap: 7px;
   }
 
   .contacts__item svg {
