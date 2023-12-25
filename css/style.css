@@ -3054,17 +3054,17 @@ button,
   max-width: 275px;
 }
 
+.gallery__item--wide {
+  max-width: 298px;
+  height: auto;
+}
+
 .gallery__item--second {
   max-width: 272px;
 }
 
 .gallery__item--third {
   max-width: 276px;
-}
-
-.gallery__item--wide {
-  max-width: 298px;
-  height: auto;
 }
 
 .gallery__item--first img,
@@ -4138,11 +4138,15 @@ button,
     margin-top: 31px;
   }
 
+  .gallery__item--wide {
+    max-width: 253px;
+  }
+
   .gallery__item--first,
   .gallery__item--second,
-  .gallery__item--third,
-  .gallery__item--wide {
-    max-width: 338px;
+  .gallery__item--third {
+    max-width: 253px;
+    margin-right: 4px;
   }
 
   .gallery__image-wrapper--top img {
@@ -4317,23 +4321,6 @@ button,
 
   .features__item:last-child h3 {
     padding: 0 70px;
-  }
-
-  .gallery__item--wide {
-    margin-right: 5px;
-  }
-
-  .gallery__item--first,
-  .gallery__item--second,
-  .gallery__item--third,
-  .gallery__item--wide {
-    max-width: 253px;
-  }
-
-  .gallery__item--first,
-  .gallery__item--second,
-  .gallery__item--third {
-    margin-right: 4px;
   }
 }
 
@@ -4869,19 +4856,14 @@ button,
   }
 
   .gallery__item--wide {
+    max-width: 159px;
     margin-right: 2px;
   }
 
   .gallery__item--first,
   .gallery__item--second,
-  .gallery__item--third,
-  .gallery__item--wide {
-    max-width: 159px;
-  }
-
-  .gallery__item--first,
-  .gallery__item--second,
   .gallery__item--third {
+    max-width: 159px;
     margin-right: 2px;
   }
 
