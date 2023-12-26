@@ -2131,7 +2131,6 @@ button,
   height: 459px;
   right: 0;
   bottom: 154px;
-  background-color: #0266c1;
 }
 
 .hero__photos img {
@@ -2290,6 +2289,13 @@ button,
   z-index: 2;
   width: 602px;
   height: 1630px;
+}
+
+.tours__clouds-big img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .tours__header {
@@ -2638,6 +2644,7 @@ button,
   flex-shrink: 0;
   margin: 0 0 15px;
   background-color: rgba(0, 0, 0, 0.2);
+  max-height: 200px;
 }
 
 .training__image img {
@@ -2758,6 +2765,13 @@ button,
   height: 280px;
 }
 
+.about__clouds-small img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
 .about__title {
   margin-bottom: 27px;
 }
@@ -2767,6 +2781,15 @@ button,
   z-index: -1;
   left: 0;
   top: 56px;
+  width: 808px;
+  height: 474px;
+}
+
+.about__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .about__wrapper {
@@ -2927,6 +2950,13 @@ button,
   height: 402px;
 }
 
+.features__clouds-left img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
 .features__clouds-right {
   position: absolute;
   top: 60px;
@@ -2934,6 +2964,13 @@ button,
   z-index: 2;
   width: 462px;
   height: 263px;
+}
+
+.features__clouds-right img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .features__title {
@@ -3099,6 +3136,14 @@ button,
   -o-object-fit: cover;
   object-fit: cover;
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.gallery__image-wrapper--top img {
+  max-height: 179px;
+}
+
+.gallery__image-wrapper--bottom img {
+  max-height: 265px;
 }
 
 .feedback {
@@ -3405,6 +3450,7 @@ button,
 
 .contacts__map {
   padding-top: 75px;
+  height: 324px;
 }
 
 .contacts__map img {
@@ -3985,6 +4031,8 @@ button,
   }
 
   .about__image {
+    width: 542px;
+    height: 350px;
     top: 60px;
   }
 
@@ -4257,6 +4305,7 @@ button,
 
   .contacts__map {
     padding-top: 0;
+    height: 340px;
   }
 
   .footer__wrapper {
@@ -4683,6 +4732,8 @@ button,
 
   .about__image {
     position: static;
+    width: 350px;
+    height: 400px;
   }
 
   .about__image img {
@@ -4973,6 +5024,10 @@ button,
   .contacts__item a,
   .contacts__item address {
     line-height: 20px;
+  }
+
+  .contacts__map {
+    height: 320px;
   }
 
   .contacts__br {
