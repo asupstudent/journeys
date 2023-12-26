@@ -34,6 +34,12 @@
   @include vp-767 {
     display: none;
   }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
 
 .features__clouds-right {
@@ -53,6 +59,12 @@
 
   @include vp-767 {
     display: none;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 }
 

@@ -169,6 +169,18 @@
 }
 
 .gallery__image-wrapper {
+  &--top {
+    img {
+      max-height: 179px;
+    }
+  }
+
+  &--bottom {
+    img {
+      max-height: 265px;
+    }
+  }
+
   @include vp-1199 {
     &--top {
       img {
