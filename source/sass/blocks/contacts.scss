@@ -163,11 +163,11 @@
 }
 
 .contacts__map {
-  padding-top: 75px;
+  margin-top: 75px;
   height: 324px;
 
   @include vp-1199 {
-    padding-top: 0;
+    margin-top: 0;
     height: 340px;
   }
 

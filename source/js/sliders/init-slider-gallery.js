@@ -8,8 +8,6 @@ const setSliderGallery = () => new window.Swiper(sliderGallery, {
     prevEl: buttonPrev,
   },
   slidesPerView: 'auto',
-  slidesPerGroup: 2,
-  loopAddBlankSlides: true,
   loop: true,
 });
 
