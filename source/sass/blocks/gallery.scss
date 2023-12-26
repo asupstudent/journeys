@@ -120,6 +120,8 @@
   &--first,
   &--second,
   &--third {
+    height: auto;
+
     @include vp-1199 {
       max-width: 253px;
       margin-right: 4px;
@@ -171,26 +173,26 @@
 .gallery__image-wrapper {
   &--top {
     img {
-      max-height: 179px;
+      height: 179px;
     }
   }
 
   &--bottom {
     img {
-      max-height: 265px;
+      height: 265px;
     }
   }
 
   @include vp-1199 {
     &--top {
       img {
-        max-height: 180px;
+        height: 180px;
       }
     }
 
     &--bottom {
       img {
-        max-height: 265px;
+        height: 265px;
       }
     }
   }
@@ -198,13 +200,13 @@
   @include vp-767 {
     &--top {
       img {
-        max-height: 100px;
+        height: 100px;
       }
     }
 
     &--bottom {
       img {
-        max-height: 157px;
+        height: 157px;
       }
     }
   }
