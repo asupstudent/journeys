@@ -2131,6 +2131,7 @@ button,
   height: 459px;
   right: 0;
   bottom: 154px;
+  background-color: #0266c1;
 }
 
 .hero__photos img {
@@ -2146,6 +2147,7 @@ button,
   height: 220px;
   bottom: 154px;
   right: 0;
+  background-color: #0266c1;
 }
 
 .hero__audio iframe {
@@ -2376,6 +2378,7 @@ button,
   position: absolute;
   inset: 0;
   z-index: -2;
+  color: #ffffff;
 }
 
 .tours__image img {
@@ -2634,7 +2637,7 @@ button,
   -ms-flex-negative: 0;
   flex-shrink: 0;
   margin: 0 0 15px;
-  background-color: #0266c1;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .training__image img {
@@ -2764,7 +2767,6 @@ button,
   z-index: -1;
   left: 0;
   top: 56px;
-  background-color: #0266c1;
 }
 
 .about__wrapper {
@@ -2860,7 +2862,7 @@ button,
 .review__avatar {
   min-width: 258px;
   max-height: 253px;
-  background-color: #0266c1;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .review__avatar img {
@@ -3077,7 +3079,7 @@ button,
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  background-color: #0266c1;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .gallery__item-wrapper {
@@ -3096,7 +3098,7 @@ button,
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  background-color: #0266c1;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .feedback {
@@ -3130,7 +3132,8 @@ button,
   -o-object-fit: cover;
   object-fit: cover;
   z-index: -1;
-  background-color: #0266c1;
+  background-color: #2d383f;
+  color: #ffffff;
 }
 
 .feedback h2 {
@@ -3409,7 +3412,7 @@ button,
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  background-color: #0266c1;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .contacts__br {
