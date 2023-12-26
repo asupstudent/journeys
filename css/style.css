@@ -2644,7 +2644,7 @@ button,
   flex-shrink: 0;
   margin: 0 0 15px;
   background-color: rgba(0, 0, 0, 0.2);
-  max-height: 200px;
+  height: 200px;
 }
 
 .training__image img {
@@ -3105,6 +3105,12 @@ button,
   max-width: 276px;
 }
 
+.gallery__item--first,
+.gallery__item--second,
+.gallery__item--third {
+  height: auto;
+}
+
 .gallery__item--first img,
 .gallery__item--second img,
 .gallery__item--third img {
@@ -3139,11 +3145,11 @@ button,
 }
 
 .gallery__image-wrapper--top img {
-  max-height: 179px;
+  height: 179px;
 }
 
 .gallery__image-wrapper--bottom img {
-  max-height: 265px;
+  height: 265px;
 }
 
 .feedback {
@@ -4198,11 +4204,11 @@ button,
   }
 
   .gallery__image-wrapper--top img {
-    max-height: 180px;
+    height: 180px;
   }
 
   .gallery__image-wrapper--bottom img {
-    max-height: 265px;
+    height: 265px;
   }
 
   .feedback {
@@ -4932,11 +4938,11 @@ button,
   }
 
   .gallery__image-wrapper--top img {
-    max-height: 100px;
+    height: 100px;
   }
 
   .gallery__image-wrapper--bottom img {
-    max-height: 157px;
+    height: 157px;
   }
 
   .feedback {
