@@ -5,6 +5,7 @@
   border: 1px solid $color-elephant-30;
   align-self: flex-start;
   cursor: pointer;
+  flex-shrink: 0;
 
   svg {
     color: $color-elephant;

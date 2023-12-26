@@ -4,12 +4,13 @@
     font-weight: 700;
     line-height: 21px;
     margin: 0 0 23px;
-    padding: 0;
+    padding: 0 120px 0 0;
 
     @include vp-1199 {
       font-size: 18px;
       line-height: 18px;
       margin-bottom: 36px;
+      padding: 0;
     }
 
     @include vp-767 {
@@ -70,7 +71,7 @@
       width: 13px;
       height: 13px;
       left: 0;
-      bottom: 32px;
+      top: 16px;
     }
   }
 
@@ -92,7 +93,8 @@
       display: block;
       background-color: $color-navy-blue-10;
       left: 21px;
-      bottom: 7px;
+      bottom: 0;
+      top: 55px;
       width: 56px;
       transform: rotate(90deg);
     }

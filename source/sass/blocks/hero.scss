@@ -11,6 +11,7 @@
 .hero__item {
   position: relative;
   background-color: $color-elephant;
+  height: auto;
 
   &::before {
     position: absolute;
@@ -27,7 +28,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding: 200px 0 80px;
   min-height: 800px;
 
@@ -104,7 +104,7 @@
   margin-bottom: 40px;
 
   @include vp-1199 {
-    margin-bottom: auto;
+    margin-bottom: 0;
   }
 }
 
@@ -112,6 +112,7 @@
   display: flex;
   gap: 10px;
   margin-top: auto;
+  max-width: 700px;
 
   span {
     position: relative;
@@ -140,7 +141,7 @@
 
 .hero__video {
   position: absolute;
-  top: 329px;
+  bottom: 154px;
   right: 0;
   width: 482px;
   height: 317px;
@@ -151,16 +152,13 @@
   }
 
   @include vp-1199 {
+    margin-top: 45px;
+    margin-bottom: 147px;
     position: relative;
-    top: auto;
+    bottom: auto;
     right: auto;
-    bottom: 150px;
     width: 442px;
     height: 300px;
-  }
-
-  @include vp-1023 {
-    bottom: 147px;
   }
 
   @include vp-767 {
@@ -280,12 +278,12 @@
   bottom: 154px;
 
   @include vp-1199 {
+    margin-top: 45px;
     width: 442px;
     height: 365px;
-    bottom: 122px;
-    left: 50%;
-    right: 50%;
-    transform: translateX(-50%);
+    position: relative;
+    margin-bottom: 82px;
+    bottom: auto;
   }
 
   img {
@@ -307,10 +305,10 @@
   right: 0;
 
   @include vp-1199 {
-    bottom: 267px;
-    left: 50%;
-    right: 50%;
-    transform: translateX(-50%);
+    margin-bottom: 227px;
+    margin-top: 45px;
+    position: relative;
+    bottom: auto;
   }
 
   @include vp-767 {
