@@ -1601,6 +1601,8 @@ button,
   -ms-flex-item-align: start;
   align-self: flex-start;
   cursor: pointer;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .social-link svg {
@@ -1906,6 +1908,7 @@ button,
 .hero__item {
   position: relative;
   background-color: #2d383f;
+  height: auto;
 }
 
 .hero__item::before {
@@ -1927,9 +1930,6 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   padding: 200px 0 80px;
   min-height: 800px;
 }
@@ -1973,6 +1973,7 @@ button,
   display: flex;
   gap: 10px;
   margin-top: auto;
+  max-width: 700px;
 }
 
 .hero__details span {
@@ -1997,7 +1998,7 @@ button,
 
 .hero__video {
   position: absolute;
-  top: 329px;
+  bottom: 154px;
   right: 0;
   width: 482px;
   height: 317px;
@@ -2332,6 +2333,7 @@ button,
   max-width: 380px;
   min-height: 416px;
   background-color: #0266c1;
+  height: auto;
 }
 
 .tours__item::before {
@@ -2672,7 +2674,7 @@ button,
   font-weight: 700;
   line-height: 21px;
   margin: 0 0 23px;
-  padding: 0;
+  padding: 0 120px 0 0;
 }
 
 .process__list {
@@ -3714,7 +3716,7 @@ button,
   }
 
   .hero__btn {
-    margin-bottom: auto;
+    margin-bottom: 0;
   }
 
   .hero__details {
@@ -3722,32 +3724,29 @@ button,
   }
 
   .hero__video {
+    margin-top: 45px;
+    margin-bottom: 147px;
     position: relative;
-    top: auto;
+    bottom: auto;
     right: auto;
-    bottom: 150px;
     width: 442px;
     height: 300px;
   }
 
   .hero__photos {
+    margin-top: 45px;
     width: 442px;
     height: 365px;
-    bottom: 122px;
-    left: 50%;
-    right: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
+    position: relative;
+    margin-bottom: 82px;
+    bottom: auto;
   }
 
   .hero__audio {
-    bottom: 267px;
-    left: 50%;
-    right: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
+    margin-bottom: 227px;
+    margin-top: 45px;
+    position: relative;
+    bottom: auto;
   }
 
   .swiper .hero__swiper-pagination {
@@ -3853,6 +3852,7 @@ button,
     font-size: 18px;
     line-height: 18px;
     margin-bottom: 36px;
+    padding: 0;
   }
 
   .process__list {
@@ -4289,10 +4289,6 @@ button,
     max-width: 473px;
   }
 
-  .hero__video {
-    bottom: 147px;
-  }
-
   .tours__item h3 {
     padding-right: 45px;
   }
@@ -4606,14 +4602,15 @@ button,
     width: 13px;
     height: 13px;
     left: 0;
-    bottom: 32px;
+    top: 16px;
   }
 
   .process__item::after {
     display: block;
     background-color: rgba(2, 102, 193, 0.1);
     left: 21px;
-    bottom: 7px;
+    bottom: 0;
+    top: 55px;
     width: 56px;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
