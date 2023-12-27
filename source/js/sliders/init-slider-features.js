@@ -1,3 +1,4 @@
+import Swiper from '../../js/vendor/swiper';
 const sliderFeatures = document.querySelector('[data-swiper="features"]');
 const buttonNext = document.querySelector('[data-swiper-features="button-next"]');
 const buttonPrev = document.querySelector('[data-swiper-features="button-prev"]');
@@ -6,9 +7,7 @@ let featuresSwiper;
 
 const initSliderFeatures = () => {
   if (sliderFeatures && window.innerWidth > 1200) {
-    // eslint-disable-next-line
     featuresSwiper = new Swiper(sliderFeatures, {
-      loop: true,
       navigation: {
         nextEl: buttonNext,
         prevEl: buttonPrev,
