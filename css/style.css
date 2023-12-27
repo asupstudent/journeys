@@ -1723,6 +1723,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
   z-index: 2;
+  max-width: 150px;
 }
 
 .nav__phone .nav__phone-link {
@@ -3536,6 +3537,7 @@ body {
   -ms-flex-preferred-size: 200px;
   flex-basis: 200px;
   min-width: 145px;
+  max-width: 200px;
 }
 
 .footer__phone .footer__phone-link {
@@ -3545,6 +3547,7 @@ body {
   margin-left: auto;
   color: #2d383f;
   text-decoration: none;
+  width: 145px;
 }
 
 .footer__phone .footer__phone-link.focus-visible:focus,
@@ -3700,6 +3703,7 @@ body {
     -webkit-box-ordinal-group: 4;
     -ms-flex-order: 3;
     order: 3;
+    max-width: 138px;
   }
 
   .nav__burger-button {
@@ -4407,8 +4411,10 @@ body {
   }
 
   .nav__phone {
+    justify-self: flex-end;
     grid-area: phone;
     margin-top: 12px;
+    max-width: 113px;
   }
 
   .nav__burger-button {
