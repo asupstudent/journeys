@@ -67,6 +67,7 @@
 }
 
 .nav__logo {
+  text-decoration: none;
   z-index: 2;
 
   @include vp-1199 {
@@ -115,6 +116,7 @@
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
+  text-decoration: none;
 
   &::before {
     content: "";
@@ -185,6 +187,7 @@
     line-height: 18px;
     margin-left: auto;
     margin-top: 4px;
+    text-decoration: none;
 
     @include hover-focus {
       color: $color-resolution-blue;
@@ -248,6 +251,7 @@
   z-index: 3;
   width: 26px;
   height: 26px;
+  appearance: none;
 
   svg + svg {
     display: none;

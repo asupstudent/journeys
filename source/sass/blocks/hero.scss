@@ -192,6 +192,7 @@
   background: $color-transparent;
   border: none;
   cursor: pointer;
+  appearance: none;
 
   &::after {
     position: absolute;

@@ -11,6 +11,8 @@
   border: 0;
   user-select: none;
   cursor: pointer;
+  appearance: none;
+  text-decoration: none;
 
   @include without-outline;
 

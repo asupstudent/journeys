@@ -6,6 +6,8 @@
   align-self: flex-start;
   cursor: pointer;
   flex-shrink: 0;
+  color: $color-default-black;
+  text-decoration: none;
 
   svg {
     color: $color-elephant;
