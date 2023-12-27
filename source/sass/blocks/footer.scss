@@ -120,6 +120,7 @@
   margin-top: 3px;
   flex-basis: 200px;
   min-width: 145px;
+  max-width: 200px;
 
   .footer__phone-link {
     font-size: 18px;
@@ -128,6 +129,7 @@
     margin-left: auto;
     color: $color-elephant;
     text-decoration: none;
+    width: 145px;
 
     @include hover-focus {
       color: $color-resolution-blue;
