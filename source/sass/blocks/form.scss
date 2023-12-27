@@ -1,17 +1,19 @@
-.form__wrapper {
-  display: flex;
-  align-items: center;
-  gap: 30px;
+.form {
+  form {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 
-  @include vp-1199 {
-    flex-direction: column;
-    gap: 11px;
-  }
+    @include vp-1199 {
+      flex-direction: column;
+      gap: 11px;
+    }
 
-  @include vp-767 {
-    width: 290px;
-    margin: 0 auto;
-    gap: 8px;
+    @include vp-767 {
+      width: 290px;
+      margin: 0 auto;
+      gap: 8px;
+    }
   }
 }
 
