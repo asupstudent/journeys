@@ -1377,8 +1377,6 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 100vh;
-  /* stylelint-disable-next-line */
-  min-height: calc(100 * var(--vh, 1vh));
 }
 
 .wrapper .header,
@@ -1414,15 +1412,6 @@ body {
 
 .scroll-lock {
   overflow: hidden;
-}
-
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
