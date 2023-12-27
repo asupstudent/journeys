@@ -3130,7 +3130,7 @@ body {
   color: #ffffff;
 }
 
-.form__wrapper {
+.form form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4189,7 +4189,7 @@ body {
     max-width: 300px;
   }
 
-  .form__wrapper {
+  .form form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -4922,7 +4922,7 @@ body {
     line-height: 18px;
   }
 
-  .form__wrapper {
+  .form form {
     width: 290px;
     margin: 0 auto;
     gap: 8px;
