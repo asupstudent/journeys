@@ -9,10 +9,9 @@ const baseSuccessCallback = (event) => {
   }).then((response) => response.text()).then((data) => {
     document.body.innerHTML = `<pre>${data}</pre>`;
   }).catch(() => {
-
+    form.noValidate = false;
+    form.reportValidity();
   });
-  form.noValidate = false;
-  form.reportValidity();
 };
 
 const baseErrorCallback = (event) => {

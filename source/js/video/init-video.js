@@ -10,14 +10,15 @@ function setupVideo(video) {
   const button = video.querySelector('.hero__video-button');
   const poster = video.querySelector('img');
 
-  button.addEventListener('click', () => {
-    const iframe = createIframe();
-    poster.remove();
-    button.remove();
-    video.appendChild(iframe);
-  });
-
-  video.classList.add('hero__video--enabled');
+  if (video !== null) {
+    button.addEventListener('click', () => {
+      const iframe = createIframe();
+      poster.remove();
+      button.remove();
+      video.appendChild(iframe);
+    });
+    video.classList.add('hero__video--enabled');
+  }
 }
 
 function createIframe() {
